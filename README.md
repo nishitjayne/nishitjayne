@@ -78,7 +78,7 @@ Building products that blend intelligent systems with beautiful interfaces.
 🌱  Learning    →  LangGraph · vector DBs · on-device ML (Core ML)
 🛠️  Breaking    →  My own products before users can
 🎯  2026 goal   →  Ship 3 products that make real money
-💬  Ask me about →  Gemini APIs, Flask, React Native, cold emails
+💬  Ask me about →  🪐 Space · 🔭 Astrophysics · 🌀 Conspiracy Theories · 🧘 Philosophy · ✨ Destiny & Fate
 ```
 
 ---
