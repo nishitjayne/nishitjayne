@@ -1,18 +1,11 @@
-<h1 align="center">Hey, I'm Nishit Jain 👋</h1>
+# Hey, I'm Nishit Jain 👋
 
-<p align="center">
-  <b>Full-Stack Developer · AI Builder · Digital Growth Hacker</b><br/>
-  Building products that blend intelligent systems with beautiful interfaces.
-</p>
+**Full-Stack Developer · AI Builder · Digital Growth Hacker**
 
-<p align="center">
-  <a href="https://spacegrowmedia.com" target="_blank">
-    <img src="https://img.shields.io/badge/SpaceGrow%20Media-181717?style=for-the-badge&logo=vercel&logoColor=white"/>
-  </a>
-  <a href="https://github.com/nishitjayne">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-</p>
+Building products that blend intelligent systems with beautiful interfaces.
+
+[![SpaceGrow Media](https://img.shields.io/badge/SpaceGrow%20Media-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://spacegrowmedia.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nishitjayne)
 
 ---
 
@@ -62,29 +55,24 @@
 
 | Project | Description | Stack |
 |---|---|---|
-| [**SpaceGrow Media**](https://github.com/nishitjayne/spacegrowmedia) | Digital agency website with animated space background, pricing, and Google Analytics | HTML · CSS · Vite |
-| [**AI Lead Qualifier**](https://github.com/nishitjayne/ai-lead-qualifier) | Multi-agent Gemini CLI — discovers leads, audits websites, generates & sends cold emails via Gmail | Python · Gemini · SMTP |
-| [**ReadyAI**](https://github.com/nishitjayne/readyai) | AI-powered interview practice app with Duolingo-style learning path and dynamic feedback | React Native · Expo · TypeScript |
+| [**SpaceGrow Media**](https://github.com/nishitjayne/spacegrowmedia) | Digital agency website with animated space background and Google Analytics | HTML · CSS · Vite |
+| [**AI Lead Qualifier**](https://github.com/nishitjayne/ai-lead-qualifier) | Multi-agent Gemini CLI — discovers leads, audits websites, generates & sends cold emails | Python · Gemini · SMTP |
+| [**ReadyAI**](https://github.com/nishitjayne/readyai) | AI interview practice app with Duolingo-style learning path and dynamic feedback | React Native · Expo · TypeScript |
 | [**Knowledge Bounty**](https://github.com/nishitjayne/knowledge-bounty) | Real-time gamified task marketplace with race-condition-proof MongoDB and XP leaderboard | MERN Stack |
-| [**Velmessa**](https://github.com/nishitjayne/velmessa) | Animated SaaS landing page with 9-blob organic animation system and glassmorphism | React · Framer Motion |
-| [**Attendance System**](https://github.com/nishitjayne/attendance-system) | Contactless biometric attendance via real-time facial recognition and KNN classification | Python · OpenCV · Flask |
-| [**LendenClub Identity**](https://github.com/nishitjayne/lendenclub-identitymicro-service) | Secure user profile & access control microservice with JWT + AES-256 encryption | Node.js · JWT |
+| [**Velmessa**](https://github.com/nishitjayne/velmessa) | Animated SaaS landing page with organic blob animation and glassmorphism | React · Framer Motion |
+| [**Attendance System**](https://github.com/nishitjayne/attendance-system) | Contactless biometric attendance via real-time facial recognition and KNN | Python · OpenCV · Flask |
+| [**LendenClub Identity**](https://github.com/nishitjayne/lendenclub-identitymicro-service) | Secure user profile & access control microservice with JWT + AES-256 | Node.js · JWT |
 
 ---
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishitjayne&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishitjayne&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
-</p>
+![Nishit's GitHub Stats](https://github-readme-stats.vercel.app/api?username=nishitjayne&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=nishitjayne&theme=tokyonight&hide_border=true" height="160"/>
-</p>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nishitjayne&layout=compact&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=nishitjayne&theme=tokyonight&hide_border=true)
 
 ---
 
-<p align="center">
-  <i>"Build fast. Ship real. Iterate always."</i>
-</p>
+> *"Build fast. Ship real. Iterate always."*
