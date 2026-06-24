@@ -67,7 +67,7 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 ## 🐍 Watch the snake eat my commits
 
-![snake gif](https://github.com/nishitjayne/nishitjayne/blob/output/github-contribution-grid-snake-dark.svg)
+![snake gif](https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/github-contribution-grid-snake-dark.svg)
 
 ---
 
