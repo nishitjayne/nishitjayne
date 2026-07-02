@@ -74,11 +74,11 @@ Building products that blend intelligent systems with beautiful interfaces.
 ## ⚡ Currently Cooking
 
 ```
-🔭  Working on  →  AI agents that do sales outreach autonomously
+🔭  Working on  →  AI agents 
 🌱  Learning    →  LangGraph · vector DBs · on-device ML (Core ML)
 🛠️  Breaking    →  My own products before users can
-🎯  2026 goal   →  Ship 3 products that make real money
-💬  Ask me about →  🪐 Space · 🔭 Astrophysics · 🌀 Conspiracy Theories · 🧘 Philosophy · ✨ Destiny & Fate
+🎯  2026 goal   →  Build 3 Products that bring a unique and effecient point of view on everyday tasks. 
+💬  Ask me about →  🪐 Space · 🔭 Astrophysics · 🌀 Conspiracy Theories · 🧘 Philosophy 
 ```
 
 ---
