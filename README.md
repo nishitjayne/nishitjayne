@@ -11,7 +11,7 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 ## 🧠 About Me
 
-- 🚀 I built **[SpaceGrow Media](https://github.com/nishitjayne/spacegrowmedia)** — a digital growth agency for small businesses
+- 🚀 I spun **[SpaceGrow Media](https://github.com/nishitjayne/spacegrowmedia)** into the digital ether — a hyper-immersive 3D agency experience (boot it on desktop for max visual fidelity)
 - 🤖 I build **AI-powered pipelines** using Gemini, LangChain, and multi-agent systems
 - 🧪 Currently experimenting with **React Native**, **computer vision**, and **agentic workflows**
 - 🎯 Focus: shipping real products, not just side projects
