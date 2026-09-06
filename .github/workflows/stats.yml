@@ -35,8 +35,10 @@ jobs:
 
       - name: Render the cards
         env:
-          # The built-in token is enough: everything read is public data.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The built-in token can only see public contributions. Add a PAT with
+          # read:user as the STATS_TOKEN secret to have private commits counted
+          # too - the card says which of the two it is reporting.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           STATS_USER: ${{ github.repository_owner }}
         run: node .github/scripts/stats.mjs
 

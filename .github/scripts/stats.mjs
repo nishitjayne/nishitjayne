@@ -6,8 +6,10 @@
 //
 //   GITHUB_TOKEN=$(gh auth token) node .github/scripts/stats.mjs
 //
-// The workflow's built-in GITHUB_TOKEN is enough - everything read here is
-// public data.
+// The workflow's built-in GITHUB_TOKEN reports public commits only. Set the
+// STATS_TOKEN secret to a PAT with read:user to have private work counted too;
+// the card states which of the two it is showing, so the number is never
+// overstated.
 
 import { writeFileSync, mkdirSync } from 'node:fs'
 
@@ -41,6 +43,13 @@ const graphql = async (query, variables) => {
 
 // ---------------------------------------------------------------- gather
 
+// Whose token is this? A token belonging to the profile owner sees commits in
+// private repos as ordinary contributions; anyone else's (the workflow's
+// built-in one included) only ever sees public work. The card has to say which
+// of the two it is reporting, so it never overstates the number.
+const viewer = await graphql('query{viewer{login}}')
+const ownToken = viewer.viewer.login.toLowerCase() === USER.toLowerCase()
+
 const user = await api(`/users/${USER}`)
 const repos = await api(`/users/${USER}/repos?per_page=100&type=owner&sort=pushed`)
 
@@ -66,6 +75,7 @@ const startYear = new Date(user.created_at).getUTCFullYear()
 const thisYear = new Date().getUTCFullYear()
 
 let commitsAllTime = 0
+let privateCommits = 0
 let prs = 0
 let issues = 0
 let reviews = 0
@@ -87,6 +97,7 @@ for (let y = startYear; y <= thisYear; y++) {
   )
   const c = data.user.contributionsCollection
   commitsAllTime += c.totalCommitContributions + c.restrictedContributionsCount
+  privateCommits += c.restrictedContributionsCount
   prs += c.totalPullRequestContributions
   issues += c.totalIssueContributions
   reviews += c.totalPullRequestReviewContributions
@@ -130,6 +141,8 @@ for (const d of days) {
 const weeks = calendar.weeks.map((w) =>
   w.contributionDays.reduce((n, d) => n + d.contributionCount, 0),
 )
+
+const seesPrivate = ownToken || privateCommits > 0
 
 // ---------------------------------------------------------------- render
 
@@ -184,7 +197,7 @@ function statsCard(t) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub statistics for ${esc(USER)}">
   <rect width="${W}" height="${H}" rx="10" fill="${t.card}" stroke="${t.line}"/>
   <text x="22" y="34" ${FONT} font-size="15" font-weight="600" fill="${t.accent}">${esc(user.name ?? USER)}</text>
-  <text x="22" y="53" ${FONT} font-size="11.5" fill="${t.dim}">Every commit, public and private, since ${startYear}</text>
+  <text x="22" y="53" ${FONT} font-size="11.5" fill="${t.dim}">${seesPrivate ? 'Every commit, public and private' : 'Public commits'}, since ${startYear}</text>
   <line x1="22" y1="68" x2="${W - 22}" y2="68" stroke="${t.line}"/>
   ${rows
     .map(
@@ -265,8 +278,19 @@ for (const [name, theme] of Object.entries(THEMES)) {
   writeFileSync(`${OUT}/activity-${name}.svg`, activityCard(theme))
 }
 
+if (!seesPrivate) {
+  console.log(
+    [
+      'NOTE: private contributions are not visible to this token, so the card reports',
+      '      public commits only. To count private work: add a PAT with read:user as',
+      '      the STATS_TOKEN secret, and turn on Settings -> Profile -> "Include',
+      '      private contributions on my profile".',
+    ].join('\n'),
+  )
+}
+
 console.log(
-  `commits(all time)=${commitsAllTime} repos=${user.public_repos} stars=${stars} ` +
+  `commits(all time)=${commitsAllTime} private=${privateCommits} repos=${user.public_repos} stars=${stars} ` +
     `prs=${prs} issues=${issues} reviews=${reviews}\n` +
     `year=${calendar.totalContributions} streak=${currentStreak} longest=${longestStreak} ` +
     `langs=${Object.keys(langBytes).length}`,
