@@ -41,10 +41,12 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 **AI & Agents**
 
-![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=claude&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![MCP](https://img.shields.io/badge/Model_Context_Protocol-000000?style=flat-square&logo=anthropic&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
@@ -117,7 +119,7 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 ```
 Working on     ->  AI agents
-Learning       ->  LangGraph · vector DBs · on-device ML (Core ML)
+Learning       ->  Local models with Ollama · LangGraph · vector DBs · on-device ML (Core ML)
 Breaking       ->  My own products before users can
 2026 goal      ->  Build 3 products that bring a unique, efficient point of view to everyday tasks
 Ask me about   ->  Space · Astrophysics · Conspiracy Theories · Philosophy
