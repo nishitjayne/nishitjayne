@@ -2,7 +2,8 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    # Every six hours, so the snake eats commits the same day you push them.
+    - cron: "7 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main]

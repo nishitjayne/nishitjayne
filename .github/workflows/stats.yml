@@ -1,0 +1,49 @@
+name: Refresh Stats Cards
+
+# The stats SVGs are generated into this repo rather than fetched from a
+# third-party card service at page load: those services were returning 503 and
+# 402 when this was set up, which leaves a broken image on the profile.
+
+on:
+  schedule:
+    # Every six hours, so the commit counts stay close to live.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/stats.mjs"
+      - ".github/workflows/stats.yml"
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Render the cards
+        env:
+          # The built-in token is enough: everything read is public data.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STATS_USER: ${{ github.repository_owner }}
+        run: node .github/scripts/stats.mjs
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/stats
+          git diff --staged --quiet || git commit -m "Refresh stats cards"
+          git push
