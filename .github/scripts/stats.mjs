@@ -43,12 +43,17 @@ const graphql = async (query, variables) => {
 
 // ---------------------------------------------------------------- gather
 
-// Whose token is this? A token belonging to the profile owner sees commits in
-// private repos as ordinary contributions; anyone else's (the workflow's
-// built-in one included) only ever sees public work. The card has to say which
-// of the two it is reporting, so it never overstates the number.
-const viewer = await graphql('query{viewer{login}}')
-const ownToken = viewer.viewer.login.toLowerCase() === USER.toLowerCase()
+// Can this token see private work? Asking who the token belongs to is not
+// enough - the workflow's built-in token reports the repository owner as its
+// viewer while still seeing only public commits. Listing private repos is the
+// honest probe: it answers what the token can actually read.
+//
+// An owner with no private repos also lists none, and then public commits are
+// all the commits, so the conservative label stays true either way.
+const privateRepos = await api('/user/repos?visibility=private&per_page=1&affiliation=owner').catch(
+  () => [],
+)
+const ownToken = Array.isArray(privateRepos) && privateRepos.length > 0
 
 const user = await api(`/users/${USER}`)
 const repos = await api(`/users/${USER}/repos?per_page=100&type=owner&sort=pushed`)
