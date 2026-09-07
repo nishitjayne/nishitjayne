@@ -1,11 +1,7 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=A855F7&center=false&vCenter=true&width=700&lines=Hey%2C+I'm+Nishit+Jain;Full-Stack+Dev+%26+AI+Builder;I+ship+real+products%2C+not+just+vibes.;Let's+build+something+insane.)](https://git.io/typing-svg)
+<img src=".github/hero.svg" alt="Terminal boot sequence: whoami, role, and mission" width="640">
 
-**Full-Stack Developer · AI Builder · Digital Growth Hacker**
-
-Building products that blend intelligent systems with beautiful interfaces.
-
-[![SpaceGrow Media](https://img.shields.io/badge/SpaceGrow%20Media-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://spacegrowmedia.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nishitjayne)
+[![SpaceGrow Media](https://img.shields.io/badge/SpaceGrow%20Media-0a0e0a?style=for-the-badge&logo=vercel&logoColor=4ade80)](https://spacegrowmedia.com)
+[![GitHub](https://img.shields.io/badge/GitHub-0a0e0a?style=for-the-badge&logo=github&logoColor=4ade80)](https://github.com/nishitjayne)
 
 ---
 
@@ -22,50 +18,50 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/Python-0a0e0a?style=flat-square&logo=python&logoColor=4ade80)
+![JavaScript](https://img.shields.io/badge/JavaScript-0a0e0a?style=flat-square&logo=javascript&logoColor=4ade80)
+![TypeScript](https://img.shields.io/badge/TypeScript-0a0e0a?style=flat-square&logo=typescript&logoColor=4ade80)
+![HTML5](https://img.shields.io/badge/HTML5-0a0e0a?style=flat-square&logo=html5&logoColor=4ade80)
+![CSS3](https://img.shields.io/badge/CSS3-0a0e0a?style=flat-square&logo=css3&logoColor=4ade80)
 
 **Frameworks & Libraries**
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![React](https://img.shields.io/badge/React-0a0e0a?style=flat-square&logo=react&logoColor=4ade80)
+![React Native](https://img.shields.io/badge/React_Native-0a0e0a?style=flat-square&logo=react&logoColor=4ade80)
+![Next.js](https://img.shields.io/badge/Next.js-0a0e0a?style=flat-square&logo=nextdotjs&logoColor=4ade80)
+![Vite](https://img.shields.io/badge/Vite-0a0e0a?style=flat-square&logo=vite&logoColor=4ade80)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-0a0e0a?style=flat-square&logo=tailwindcss&logoColor=4ade80)
+![Flask](https://img.shields.io/badge/Flask-0a0e0a?style=flat-square&logo=flask&logoColor=4ade80)
+![Node.js](https://img.shields.io/badge/Node.js-0a0e0a?style=flat-square&logo=nodedotjs&logoColor=4ade80)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0a0e0a?style=flat-square&logo=framer&logoColor=4ade80)
 
 **AI & Agents**
 
-![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=claude&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![MCP](https://img.shields.io/badge/Model_Context_Protocol-000000?style=flat-square&logo=anthropic&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-0a0e0a?style=flat-square&logo=claude&logoColor=4ade80)
+![Claude Code](https://img.shields.io/badge/Claude_Code-0a0e0a?style=flat-square&logo=claude&logoColor=4ade80)
+![Google Gemini](https://img.shields.io/badge/Gemini-0a0e0a?style=flat-square&logo=googlegemini&logoColor=4ade80)
+![LangChain](https://img.shields.io/badge/LangChain-0a0e0a?style=flat-square&logo=langchain&logoColor=4ade80)
+![MCP](https://img.shields.io/badge/Model_Context_Protocol-0a0e0a?style=flat-square&logo=anthropic&logoColor=4ade80)
+![Ollama](https://img.shields.io/badge/Ollama-0a0e0a?style=flat-square&logo=ollama&logoColor=4ade80)
+![OpenCV](https://img.shields.io/badge/OpenCV-0a0e0a?style=flat-square&logo=opencv&logoColor=4ade80)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-0a0e0a?style=flat-square&logo=scikit-learn&logoColor=4ade80)
+![pandas](https://img.shields.io/badge/pandas-0a0e0a?style=flat-square&logo=pandas&logoColor=4ade80)
 
 **Data & Infrastructure**
 
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Deno](https://img.shields.io/badge/Deno-70FFAF?style=flat-square&logo=deno&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-0a0e0a?style=flat-square&logo=supabase&logoColor=4ade80)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0a0e0a?style=flat-square&logo=postgresql&logoColor=4ade80)
+![Deno](https://img.shields.io/badge/Deno-0a0e0a?style=flat-square&logo=deno&logoColor=4ade80)
+![MongoDB](https://img.shields.io/badge/MongoDB-0a0e0a?style=flat-square&logo=mongodb&logoColor=4ade80)
+![Vercel](https://img.shields.io/badge/Vercel-0a0e0a?style=flat-square&logo=vercel&logoColor=4ade80)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0a0e0a?style=flat-square&logo=githubactions&logoColor=4ade80)
+![JWT](https://img.shields.io/badge/JWT-0a0e0a?style=flat-square&logo=jsonwebtokens&logoColor=4ade80)
 
 **Shipping**
 
-![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-0a0e0a?style=flat-square&logo=pwa&logoColor=4ade80)
+![Playwright](https://img.shields.io/badge/Playwright-0a0e0a?style=flat-square)
+![Git](https://img.shields.io/badge/Git-0a0e0a?style=flat-square&logo=git&logoColor=4ade80)
 
 ---
 
@@ -73,36 +69,52 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 **Products & clients**
 
-| Repo | What it is | Stack |
-|---|---|---|
-| [**spacegrowmedia**](https://github.com/nishitjayne/spacegrowmedia) | Digital agency site with an animated space background and Google Analytics — [live](https://spacegrowmedia.com) | HTML · CSS · Vite |
-| [**velmessa**](https://github.com/nishitjayne/velmessa) | SaaS landing page: 9-blob organic animation system and glassmorphism | React · Framer Motion |
-| <img src=".github/icons/lock.svg" width="12" align="center" alt="Private"> **mezvo-scan** | Offline-first barcode inventory PWA for a vegan bag brand — scans, photos and sales captured with no signal at auctions, synced when the phone finds one | React · TypeScript · Dexie · Supabase |
-| <img src=".github/icons/lock.svg" width="12" align="center" alt="Private"> **canadian-realty** | Real-estate site — [live](https://canadian-realty.vercel.app) | JavaScript |
+```ansi
+[32m$ ls -la ~/products[0m
+
+[32m  drwxr-xr-x  spacegrowmedia          HTML · CSS · Vite[0m
+[32m  drwxr-xr-x  velmessa                React · Framer Motion[0m
+[32m  -rwx------  mezvo-scan              [encrypted][0m
+[32m  -rwx------  canadian-realty         [encrypted][0m
+```
+
+→ [spacegrowmedia](https://github.com/nishitjayne/spacegrowmedia) · [velmessa](https://github.com/nishitjayne/velmessa) · mezvo-scan (private) · canadian-realty (private)
 
 **AI & agents**
 
-| Repo | What it is | Stack |
-|---|---|---|
-| [**ai-lead-qualifier**](https://github.com/nishitjayne/ai-lead-qualifier) | Multi-agent Gemini CLI — discovers leads, audits their websites, writes and sends cold email | Python · Gemini · SMTP |
-| [**readyai**](https://github.com/nishitjayne/readyai) | AI interview practice app with a Duolingo-style learning path and dynamic feedback | React Native · Expo · TypeScript |
+```ansi
+[32m$ ls -la ~/ai-agents[0m
+
+[32m  drwxr-xr-x  ai-lead-qualifier       Python · Gemini · SMTP[0m
+[32m  drwxr-xr-x  readyai                 React Native · Expo · TS[0m
+```
+
+→ [ai-lead-qualifier](https://github.com/nishitjayne/ai-lead-qualifier) · [readyai](https://github.com/nishitjayne/readyai)
 
 **Systems & backend**
 
-| Repo | What it is | Stack |
-|---|---|---|
-| [**knowledge-bounty**](https://github.com/nishitjayne/knowledge-bounty) | Real-time gamified task marketplace, race-condition-proof MongoDB, XP leaderboard | MERN |
-| [**lendenclub-identitymicro-service**](https://github.com/nishitjayne/lendenclub-identitymicro-service) | User profile & access control microservice, JWT + AES-256 | Node.js · JWT |
+```ansi
+[32m$ ls -la ~/systems[0m
+
+[32m  drwxr-xr-x  knowledge-bounty        MERN[0m
+[32m  drwxr-xr-x  lendenclub-identitymicro-service Node.js · JWT[0m
+```
+
+→ [knowledge-bounty](https://github.com/nishitjayne/knowledge-bounty) · [lendenclub-identitymicro-service](https://github.com/nishitjayne/lendenclub-identitymicro-service)
 
 **Computer vision & experiments**
 
-| Repo | What it is | Stack |
-|---|---|---|
-| [**attendance-system**](https://github.com/nishitjayne/attendance-system) | Contactless biometric attendance: live facial recognition, KNN, Excel automation | Python · OpenCV · Flask |
-| [**miniproject**](https://github.com/nishitjayne/miniproject) | Mini web builds — face-recognition attendance, food shop, AI education page | HTML · JS |
-| [**nishitjayne**](https://github.com/nishitjayne/nishitjayne) | This profile, and the workflows that keep it current | Markdown · Actions |
+```ansi
+[32m$ ls -la ~/experiments[0m
 
-<sub><img src=".github/icons/lock.svg" width="11" align="center" alt="Private"> marks a private repo. Happy to walk through either one on a call.</sub>
+[32m  drwxr-xr-x  attendance-system       Python · OpenCV · Flask[0m
+[32m  drwxr-xr-x  miniproject             HTML · JS[0m
+[32m  drwxr-xr-x  nishitjayne             Markdown · Actions[0m
+```
+
+→ [attendance-system](https://github.com/nishitjayne/attendance-system) · [miniproject](https://github.com/nishitjayne/miniproject) · [nishitjayne](https://github.com/nishitjayne/nishitjayne)
+
+<sub>`-rwx------` marks a private repo. Happy to walk through either one on a call.</sub>
 
 ---
 
@@ -110,20 +122,21 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 <img alt="A BIOS-style boot log of real commit activity across public and private repos, refreshed every six hours" src="https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/bootseq.svg">
 
-<sub>Built from live GitHub activity — private repos included, shown as encrypted volumes rather than named.</sub>
-
 ---
 
 ## <img src=".github/icons/flame.svg" width="20" align="center" alt=""> Currently Cooking
 
-```
-Working on     ->  AI agents
-Learning       ->  Local models with Ollama · LangGraph · vector DBs · on-device ML (Core ML)
-Breaking       ->  My own products before users can
-2026 goal      ->  Build 3 products that bring a unique, efficient point of view to everyday tasks
-Ask me about   ->  Space · Astrophysics · Conspiracy Theories · Philosophy
+```ansi
+[32mWorking on     ->  AI agents[0m
+[32mLearning       ->  Local models with Ollama · LangGraph · vector DBs · on-device ML (Core ML)[0m
+[32mBreaking       ->  My own products before users can[0m
+[32m2026 goal      ->  Build 3 products that bring a unique, efficient point of view to everyday tasks[0m
+[32mAsk me about   ->  Space · Astrophysics · Conspiracy Theories · Philosophy[0m
 ```
 
 ---
 
-> *"Build fast. Ship real. Iterate always."*
+```ansi
+[32m$ echo "Build fast. Ship real. Iterate always."[0m
+[32mBuild fast. Ship real. Iterate always.[0m
+```
