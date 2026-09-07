@@ -1,0 +1,37 @@
+name: Generate Boot Sequence
+
+on:
+  schedule:
+    # Every six hours, so the log reflects the same day you push.
+    - cron: "7 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Render boot sequence
+        env:
+          GH_LOGIN: ${{ github.repository_owner }}
+          BOOT_TOKEN: ${{ secrets.BOOT_TOKEN }}
+        run: node .github/scripts/bootseq.mjs
+
+      - name: Push to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output
+          force_orphan: true

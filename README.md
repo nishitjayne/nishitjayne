@@ -106,12 +106,11 @@ Building products that blend intelligent systems with beautiful interfaces.
 
 ---
 
-## <img src=".github/icons/grid.svg" width="20" align="center" alt=""> Watch the snake eat my commits
+## <img src=".github/icons/grid.svg" width="20" align="center" alt=""> Boot Log
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/github-contribution-grid-snake-dark.svg">
-  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/github-contribution-grid-snake.svg">
-</picture>
+<img alt="A BIOS-style boot log of real commit activity across public and private repos, refreshed every six hours" src="https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/bootseq.svg">
+
+<sub>Built from live GitHub activity — private repos included, shown as encrypted volumes rather than named.</sub>
 
 ---
 
