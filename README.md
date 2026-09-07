@@ -69,48 +69,25 @@
 
 **Products & clients**
 
-```ansi
-[32m$ ls -la ~/products[0m
-
-[32m  drwxr-xr-x  spacegrowmedia          HTML · CSS · Vite[0m
-[32m  drwxr-xr-x  velmessa                React · Framer Motion[0m
-[32m  -rwx------  mezvo-scan              [encrypted][0m
-[32m  -rwx------  canadian-realty         [encrypted][0m
-```
+<img src=".github/blocks/repo-products.svg" alt="ls -la ~/products">
 
 → [spacegrowmedia](https://github.com/nishitjayne/spacegrowmedia) · [velmessa](https://github.com/nishitjayne/velmessa) · mezvo-scan (private) · canadian-realty (private)
 
 **AI & agents**
 
-```ansi
-[32m$ ls -la ~/ai-agents[0m
-
-[32m  drwxr-xr-x  ai-lead-qualifier       Python · Gemini · SMTP[0m
-[32m  drwxr-xr-x  readyai                 React Native · Expo · TS[0m
-```
+<img src=".github/blocks/repo-ai-agents.svg" alt="ls -la ~/ai-agents">
 
 → [ai-lead-qualifier](https://github.com/nishitjayne/ai-lead-qualifier) · [readyai](https://github.com/nishitjayne/readyai)
 
 **Systems & backend**
 
-```ansi
-[32m$ ls -la ~/systems[0m
-
-[32m  drwxr-xr-x  knowledge-bounty        MERN[0m
-[32m  drwxr-xr-x  lendenclub-identitymicro-service Node.js · JWT[0m
-```
+<img src=".github/blocks/repo-systems.svg" alt="ls -la ~/systems">
 
 → [knowledge-bounty](https://github.com/nishitjayne/knowledge-bounty) · [lendenclub-identitymicro-service](https://github.com/nishitjayne/lendenclub-identitymicro-service)
 
 **Computer vision & experiments**
 
-```ansi
-[32m$ ls -la ~/experiments[0m
-
-[32m  drwxr-xr-x  attendance-system       Python · OpenCV · Flask[0m
-[32m  drwxr-xr-x  miniproject             HTML · JS[0m
-[32m  drwxr-xr-x  nishitjayne             Markdown · Actions[0m
-```
+<img src=".github/blocks/repo-experiments.svg" alt="ls -la ~/experiments">
 
 → [attendance-system](https://github.com/nishitjayne/attendance-system) · [miniproject](https://github.com/nishitjayne/miniproject) · [nishitjayne](https://github.com/nishitjayne/nishitjayne)
 
@@ -126,17 +103,8 @@
 
 ## <img src=".github/icons/flame.svg" width="20" align="center" alt=""> Currently Cooking
 
-```ansi
-[32mWorking on     ->  AI agents[0m
-[32mLearning       ->  Local models with Ollama · LangGraph · vector DBs · on-device ML (Core ML)[0m
-[32mBreaking       ->  My own products before users can[0m
-[32m2026 goal      ->  Build 3 products that bring a unique, efficient point of view to everyday tasks[0m
-[32mAsk me about   ->  Space · Astrophysics · Conspiracy Theories · Philosophy[0m
-```
+<img src=".github/blocks/cooking.svg" alt="Currently working on, learning, and asking about">
 
 ---
 
-```ansi
-[32m$ echo "Build fast. Ship real. Iterate always."[0m
-[32mBuild fast. Ship real. Iterate always.[0m
-```
+<img src=".github/blocks/closing.svg" alt="echo Build fast. Ship real. Iterate always.">

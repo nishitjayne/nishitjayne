@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="869" height="130" viewBox="0 0 869 130">
+  <style>
+    svg { background: #0a0e0a; }
+    text {
+      font-family: 'Consolas', 'SFMono-Regular', Menlo, monospace;
+      font-size: 14px;
+      fill: #4ade80;
+      white-space: pre;
+    }
+    .prompt { fill: #86efac; font-weight: bold; }
+    .dim { fill: #2f7a4d; }
+    text { filter: drop-shadow(0 0 1.5px rgba(74,222,128,0.45)); }
+  </style>
+  <rect x="0" y="0" width="869" height="130" fill="#0a0e0a"/>
+  <text x="18" y="30" class="out">Working on     -&gt;  AI agents</text>
+    <text x="18" y="51" class="out">Learning       -&gt;  Local models with Ollama · LangGraph · vector DBs · on-device ML (Core ML)</text>
+    <text x="18" y="72" class="out">Breaking       -&gt;  My own products before users can</text>
+    <text x="18" y="93" class="out">2026 goal      -&gt;  Build 3 products that bring a unique, efficient point of view to everyday tasks</text>
+    <text x="18" y="114" class="out">Ask me about   -&gt;  Space · Astrophysics · Conspiracy Theories · Philosophy</text>
+</svg>

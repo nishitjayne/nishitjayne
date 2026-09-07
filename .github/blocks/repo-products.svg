@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504" height="151" viewBox="0 0 504 151">
+  <style>
+    svg { background: #0a0e0a; }
+    text {
+      font-family: 'Consolas', 'SFMono-Regular', Menlo, monospace;
+      font-size: 14px;
+      fill: #4ade80;
+      white-space: pre;
+    }
+    .prompt { fill: #86efac; font-weight: bold; }
+    .dim { fill: #2f7a4d; }
+    text { filter: drop-shadow(0 0 1.5px rgba(74,222,128,0.45)); }
+  </style>
+  <rect x="0" y="0" width="504" height="151" fill="#0a0e0a"/>
+  <text x="18" y="30" class="prompt">$ ls -la ~/products</text>
+    <text x="18" y="51" class="out"> </text>
+    <text x="18" y="72" class="out">  drwxr-xr-x  spacegrowmedia      HTML · CSS · Vite</text>
+    <text x="18" y="93" class="out">  drwxr-xr-x  velmessa            React · Framer Motion</text>
+    <text x="18" y="114" class="out">  -rwx------  mezvo-scan          [encrypted]</text>
+    <text x="18" y="135" class="out">  -rwx------  canadian-realty     [encrypted]</text>
+</svg>

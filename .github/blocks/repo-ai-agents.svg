@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="529" height="109" viewBox="0 0 529 109">
+  <style>
+    svg { background: #0a0e0a; }
+    text {
+      font-family: 'Consolas', 'SFMono-Regular', Menlo, monospace;
+      font-size: 14px;
+      fill: #4ade80;
+      white-space: pre;
+    }
+    .prompt { fill: #86efac; font-weight: bold; }
+    .dim { fill: #2f7a4d; }
+    text { filter: drop-shadow(0 0 1.5px rgba(74,222,128,0.45)); }
+  </style>
+  <rect x="0" y="0" width="529" height="109" fill="#0a0e0a"/>
+  <text x="18" y="30" class="prompt">$ ls -la ~/ai-agents</text>
+    <text x="18" y="51" class="out"> </text>
+    <text x="18" y="72" class="out">  drwxr-xr-x  ai-lead-qualifier   Python · Gemini · SMTP</text>
+    <text x="18" y="93" class="out">  drwxr-xr-x  readyai             React Native · Expo · TS</text>
+</svg>
