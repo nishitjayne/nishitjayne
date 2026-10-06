@@ -8,6 +8,7 @@
 ## <img src=".github/icons/about.svg" width="20" align="center" alt=""> About Me
 
 - I spun **[SpaceGrow Media](https://github.com/nishitjayne/spacegrowmedia)** into the digital ether — a hyper-immersive 3D agency experience (boot it on desktop for max visual fidelity)
+- I built **[Mezvo Scan](https://mezvo-scan.vercel.app)** — an offline-first barcode inventory PWA a bag brand runs its stalls on: scan to sell with no signal, sync when it returns, and print tags straight to a Bluetooth thermal printer
 - I build **AI-powered pipelines** using Gemini, LangChain, and multi-agent systems
 - Currently experimenting with **React Native**, **computer vision**, and **agentic workflows**
 - Focus: shipping real products, not just side projects
@@ -71,7 +72,7 @@
 
 <img src=".github/blocks/repo-products.svg" alt="ls -la ~/products">
 
-→ [spacegrowmedia](https://github.com/nishitjayne/spacegrowmedia) · [velmessa](https://github.com/nishitjayne/velmessa) · mezvo-scan (private) · canadian-realty (private)
+→ [spacegrowmedia](https://github.com/nishitjayne/spacegrowmedia) · [velmessa](https://github.com/nishitjayne/velmessa) · mezvo-scan (private, [live](https://mezvo-scan.vercel.app)) · canadian-realty (private)
 
 **AI & agents**
 

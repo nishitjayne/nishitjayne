@@ -55,7 +55,8 @@ function repoBlock(cmd, entries) {
   const lines = [{ text: '$ ' + cmd, cls: 'prompt' }, { text: ' ' }]
   for (const e of entries) {
     const perm = e.private ? '-rwx------' : 'drwxr-xr-x'
-    const tag = e.private ? '[encrypted]' : e.stack
+    // A private repo with something to show for itself says what it is built on.
+    const tag = e.stack ?? '[encrypted]'
     const name = e.name.padEnd(nameWidth, ' ')
     lines.push({ text: `  ${perm}  ${name}${tag}` })
   }
@@ -69,7 +70,7 @@ fs.writeFileSync(
   repoBlock('ls -la ~/products', [
     { name: 'spacegrowmedia', stack: 'HTML · CSS · Vite' },
     { name: 'velmessa', stack: 'React · Framer Motion' },
-    { name: 'mezvo-scan', private: true },
+    { name: 'mezvo-scan', private: true, stack: 'React · TS · PWA · Supabase' },
     { name: 'canadian-realty', private: true },
   ])
 )
