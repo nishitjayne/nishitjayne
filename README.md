@@ -58,8 +58,8 @@ nishit@zion:~$ whoami --long
 
 <div align="center">
 
-<img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Follow the white rabbit.">
+<img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Choose.">
 
-<a href="https://github.com/nishitjayne?tab=repositories"><img src=".github/matrix/pill-red.svg" width="300" alt="Red pill: go deeper, every repository"></a> &nbsp;&nbsp; <a href="https://apod.nasa.gov/apod/astropix.html"><img src=".github/matrix/pill-blue.svg" width="300" alt="Blue pill: look up instead, NASA's astronomy picture of the day"></a>
+<a href="https://www.livescience.com/space/black-holes/is-our-universe-trapped-inside-a-black-hole-this-james-webb-space-telescope-discovery-might-blow-your-mind"><img src=".github/matrix/pill-red.svg" width="220" alt="Red pill"></a> &nbsp;&nbsp; <a href="https://hasthelargehadroncolliderdestroyedtheworldyet.com/"><img src=".github/matrix/pill-blue.svg" width="220" alt="Blue pill"></a>
 
 </div>

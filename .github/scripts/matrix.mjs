@@ -391,15 +391,14 @@ function status() {
 
 // ------------------------------------------------------------- footer -----
 
-function pillButton(color, label, hint) {
-  const PW = 300, PH = 64
+// Just the pill and its name: where it leads stays a surprise.
+function pillButton(color, label) {
+  const PW = 220, PH = 56
   const body = `
-<rect x="1" y="1" width="${PW - 2}" height="${PH - 2}" rx="32" fill="${C.bg}" stroke="${color}" stroke-width="1.5"/>
-<rect x="22" y="22" width="38" height="20" rx="10" fill="${color}" style="filter: drop-shadow(0 0 6px ${color})">
+<rect x="1" y="1" width="${PW - 2}" height="${PH - 2}" rx="28" fill="${C.bg}" stroke="${color}" stroke-width="1.5"/>
+<rect x="24" y="18" width="38" height="20" rx="10" fill="${color}" style="filter: drop-shadow(0 0 6px ${color})">
   <animate attributeName="opacity" dur="2.4s" repeatCount="indefinite" values="1;.55;1"/></rect>
-${mono(78, 30, label, 14, 'b', ` style="fill:${color}"`)}
-${mono(78, 48, hint, 11, 'dim')}`
-  if (textW(hint, 11) > PW - 78 - 20) throw new Error(`pill hint too long: ${hint}`)
+${mono(82, 33, label, 15, 'b', ` style="fill:${color}"`)}`
   return frame(PW, PH, body).replace(`<rect width="${PW}" height="${PH}" rx="10" fill="${C.bg}"/>`, '')
 }
 
@@ -408,7 +407,7 @@ function footer() {
   const CYCLE = 12
   const r = rain({ w: W, h: H, cols: 56, size: 14, opacity: 0.8, minDur: 6, maxDur: 13 })
   const l1 = 'The Matrix has you.'
-  const l2 = 'Follow the white rabbit.'
+  const l2 = 'Choose.'
   const S1 = 22, S2 = 14
   const body = `
 <defs>
@@ -443,6 +442,6 @@ out('.github/matrix/h-status.svg', header('05', 'CURRENT STATE'))
 out('.github/matrix/modules.svg', modules())
 out('.github/matrix/status.svg', status())
 out('.github/matrix/footer.svg', footer())
-out('.github/matrix/pill-red.svg', pillButton(C.red, 'RED PILL', 'go deeper: every repository'))
-out('.github/matrix/pill-blue.svg', pillButton(C.blue, 'BLUE PILL', "look up instead: today's sky"))
+out('.github/matrix/pill-red.svg', pillButton(C.red, 'RED PILL'))
+out('.github/matrix/pill-blue.svg', pillButton(C.blue, 'BLUE PILL'))
 for (const c of CARDS) out(`.github/matrix/cards/${c.name}.svg`, card(c))
