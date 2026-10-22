@@ -11,7 +11,7 @@
 //   cards/<name>.svg    one half-width slice per project, each a link
 //   footer-left/right   the window's bottom edge, one pill in each half
 //
-//   node .github/scripts/matrix.mjs        (reads dist/boot.json if present)
+//   node .github/scripts/matrix.mjs        (after bootseq.mjs writes dist/boot.json)
 
 import fs from 'node:fs'
 
@@ -43,8 +43,10 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 const xs = (x, n, size) => Array.from({ length: n }, (_, i) => (x + i * size * ADV).toFixed(1)).join(' ')
 const textW = (s, size) => [...s].length * size * ADV
 
-// One line of monospace text whose every glyph sits at a known x.
+// One line of monospace text whose every glyph sits at a known x. The page
+// speaks in capitals; commands and paths (class "code") keep their case.
 function mono(x, y, s, size, cls = '', extra = '') {
+  if (!cls.includes('code')) s = s.toUpperCase()
   return `<text x="${xs(x, [...s].length, size)}" y="${y}" font-size="${size}" class="${cls}"${extra}>${esc(s)}</text>`
 }
 
@@ -58,7 +60,7 @@ function svg(w, h, body, style = '', viewX = 0) {
 <style>
   text { font-family: ${MONO}; fill: ${C.hi}; white-space: pre; }
   .g { font-family: ${GLYPH_FONT}; }
-  .hi { fill: ${C.hi}; } .mid { fill: ${C.mid}; } .dim { fill: ${C.dim}; } .deep { fill: ${C.deep}; }
+  .hi { fill: ${C.hi}; } .mid { fill: ${C.mid}; } .dim { fill: ${C.dim}; }
   .head { fill: ${C.head}; } .b { font-weight: 700; }
   .glow { filter: drop-shadow(0 0 3px rgba(0,255,65,.65)); }
   .soft { filter: drop-shadow(0 0 1.5px rgba(0,255,65,.45)); }
@@ -157,16 +159,11 @@ function titleBar() {
   const t = ' NISHIT-OS v2.6 '
   const right = 'TTY1 · 9600 BAUD'
   const tx = W / 2 - textW(t, 12) / 2
-  const cell = 12 * ADV
-  const leftFill = '▒'.repeat(Math.floor((tx - 64) / cell))
-  const rightFill = '▒'.repeat(Math.floor((W - 22 - textW(right, 11) - 14 - (tx + textW(t, 12))) / cell))
   return {
     h: 34,
     body: `<rect width="${W}" height="34" fill="${C.panel}"/><rect y="33" width="${W}" height="1" fill="${C.deep}"/>
 ${mono(22, 22, '[■]', 12, 'dim b')}
-${mono(tx - textW(leftFill, 12), 22, leftFill, 12, 'deep')}
 ${mono(tx, 22, t, 12, 'hi b glow')}
-${mono(tx + textW(t, 12), 22, rightFill, 12, 'deep')}
 ${mono(W - 22 - textW(right, 11), 22, right, 11, 'dim')}`,
   }
 }
@@ -257,7 +254,7 @@ function whoami() {
   const S = 13, X0 = 26, LH = 21
   const maxChars = Math.floor((W - X0 - 46 - 26) / (S * ADV))
   let y = 8
-  let body = mono(X0, y + 14, 'nishit@zion:~$ ', 13, 'dim b') + mono(X0 + textW('nishit@zion:~$ ', 13), y + 14, 'whoami --long', 13, 'hi b')
+  let body = mono(X0, y + 14, 'nishit@zion:~$ ', 13, 'dim b code') + mono(X0 + textW('nishit@zion:~$ ', 13), y + 14, 'whoami --long', 13, 'hi b code')
   y += 40
   for (const item of WHOAMI) {
     wrap(item, maxChars).forEach((l, i) => {
@@ -282,7 +279,7 @@ const MODULES = [
 function modules() {
   const S = 12, LABEL_W = 130, X0 = 26, ROW_H = 30, GAP = 8, CYCLE = 12
   let y = 22
-  let body = mono(X0, y, '$ matrix --load-modules --verbose', 13, 'mid')
+  let body = mono(X0, y, '$ matrix --load-modules --verbose', 13, 'mid code')
   y += 32
   let css = ''
   let n = 0
@@ -308,15 +305,12 @@ function modules() {
 // The live boot log, in two columns: the machine on the left, its habits
 // on the right. Lines come from bootseq.mjs via dist/boot.json.
 function bootLog() {
-  let lines
-  try {
-    lines = JSON.parse(fs.readFileSync('dist/boot.json', 'utf8'))
-  } catch {
-    lines = [{ text: 'NISHIT BIOS v2.6', cls: 'hdr' }, { text: 'boot log renders in the workflow', cls: 'rule' }, { text: 'Language partition table:' }, { text: 'Starting ...', cursor: true }]
-  }
+  // Run bootseq.mjs first (the workflow does).
+  const lines = JSON.parse(fs.readFileSync('dist/boot.json', 'utf8'))
   const S = 12, LH = 19, X0 = 26, X1 = 452
   const split = lines.findIndex((l) => l.text.startsWith('Language partition'))
   const cols = [lines.slice(0, split), lines.slice(split)]
+  const rows = Math.max(cols[0].length, cols[1].length)
   let body = ''
   cols.forEach((col, c) => {
     col.forEach((l, i) => {
@@ -329,8 +323,8 @@ function bootLog() {
       if (l.cursor) body += `<rect x="${x + textW(text, S) + 4}" y="${y - 11}" width="${S * ADV}" height="13" fill="${C.hi}" class="soft">${blink()}</rect>`
     })
   })
-  body += `<rect x="${X1 - 22}" y="10" width="1" height="${Math.max(...cols.map((c) => c.length)) * LH}" fill="${C.deep}"/>`
-  return { h: 24 + Math.max(...cols.map((c) => c.length)) * LH, body }
+  body += `<rect x="${X1 - 22}" y="10" width="1" height="${rows * LH}" fill="${C.deep}"/>`
+  return { h: 24 + rows * LH, body }
 }
 
 function status() {
@@ -344,7 +338,7 @@ function status() {
   ]
   const X0 = 26
   let y = 22
-  let body = mono(X0, y, '$ cat /proc/nishit/status', 13, 'mid')
+  let body = mono(X0, y, '$ cat /proc/nishit/status', 13, 'mid code')
   y += 36
   for (const [k, v] of rows) {
     body += `<rect x="${X0}" y="${y - 15}" width="3" height="20" fill="${C.hi}" class="soft"/>`
@@ -386,7 +380,7 @@ function main() {
 
 const CARDS = [
   {
-    name: 'mezvo-scan', status: 'LIVE', meta: 'open app ->', href: 'https://mezvo-scan.vercel.app',
+    name: 'mezvo-scan', status: 'LIVE', meta: 'open app ->',
     desc: 'Offline-first barcode PWA a bag brand runs its stalls on. Sells with no signal, syncs when back, prints tags over Bluetooth.',
     stack: 'React · TypeScript · PWA · Supabase',
   },
@@ -442,7 +436,7 @@ function card({ name, status, desc, stack, meta }, side) {
   <rect width="${CW}" height="28" fill="${C.panel}"/>
   <rect y="28" width="${CW}" height="1" fill="${C.deep}"/>
   ${mono(12, 18, '[■]', 11, 'dim b')}
-  ${mono(42, 18, `~/${name}`, 11, 'dim')}
+  ${mono(42, 18, `~/${name}`, 11, 'dim code')}
   <rect x="${CW - sw - 10}" y="6" width="${sw}" height="16" rx="3" fill="none" stroke="${sc}"/>
   ${mono(CW - sw - 1, 18, status, 10, 'b', ` style="fill:${sc}"`)}
   ${status === 'LIVE' ? `<circle cx="${CW - sw - 19}" cy="14" r="3" fill="${C.hi}" class="glow">${pulse}</circle>` : ''}

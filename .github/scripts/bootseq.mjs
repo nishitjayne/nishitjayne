@@ -154,7 +154,7 @@ function pad(s, n) {
 
 const repoLines = repos.map((r) => {
   const label = r.isPrivate ? '████ ENCRYPTED VOLUME ████' : r.name
-  return { text: `   ${pad(label, 30)} [ ${String(r.commits).padStart(3)}  OK ]`, ok: true }
+  return { text: `   ${pad(label, 30)} [ ${String(r.commits).padStart(3)}  OK ]` }
 })
 
 const langLines = topLangs.map((l) => ({
@@ -164,9 +164,9 @@ const langLines = topLangs.map((l) => ({
 const lines = [
   { text: 'NISHIT BIOS v2.6  ·  (C) 2026 ' + login, cls: 'hdr' },
   { text: '═'.repeat(46), cls: 'rule' },
-  { text: `CPU ......  ${login} @ 4.2 GHz  [ ${repos.length} cores ]`, ok: true },
-  { text: `MEMORY ...  ${totalCommits} commits ${'.'.repeat(Math.max(1, 20 - String(totalCommits).length))}`, ok: true },
-  { text: 'UPTIME ...  366 days ....................', ok: true },
+  { text: `CPU ......  ${login} @ 4.2 GHz  [ ${repos.length} cores ]` },
+  { text: `MEMORY ...  ${totalCommits} commits ${'.'.repeat(Math.max(1, 20 - String(totalCommits).length))}` },
+  { text: 'UPTIME ...  366 days ....................' },
   { text: ' ' },
   { text: 'Detecting repositories ...' },
   ...repoLines,
@@ -174,9 +174,9 @@ const lines = [
   { text: 'Language partition table:' },
   ...langLines,
   { text: ' ' },
-  { text: `Peak clock .......  ${peakLabel}`, ok: true },
-  { text: `Sleep schedule ...  ${sleepLabel}`, ok: sleepLabel === 'NOT FOUND' ? false : true },
-  { text: 'Boot device ......  IDEA ...............', ok: true },
+  { text: `Peak clock .......  ${peakLabel}` },
+  { text: `Sleep schedule ...  ${sleepLabel}` },
+  { text: 'Boot device ......  IDEA ...............' },
   { text: ' ' },
   { text: `Starting ${login} ...`, cursor: true },
 ]

@@ -2,7 +2,7 @@
 <style>
   text { font-family: 'JetBrains Mono','Cascadia Mono',Consolas,'SFMono-Regular',Menlo,'Courier New',monospace; fill: #00ff41; white-space: pre; }
   .g { font-family: 'MS Gothic','Hiragino Kaku Gothic Pro','Noto Sans Mono CJK JP','Noto Sans JP','JetBrains Mono','Cascadia Mono',Consolas,'SFMono-Regular',Menlo,'Courier New',monospace; }
-  .hi { fill: #00ff41; } .mid { fill: #00c832; } .dim { fill: #008f11; } .deep { fill: #003b00; }
+  .hi { fill: #00ff41; } .mid { fill: #00c832; } .dim { fill: #008f11; }
   .head { fill: #d8ffe2; } .b { font-weight: 700; }
   .glow { filter: drop-shadow(0 0 3px rgba(0,255,65,.65)); }
   .soft { filter: drop-shadow(0 0 1.5px rgba(0,255,65,.45)); }
@@ -24,17 +24,17 @@
   <rect width="392" height="28" fill="#050f07"/>
   <rect y="28" width="392" height="1" fill="#003b00"/>
   <text x="12.0 18.6 25.2" y="18" font-size="11" class="dim b">[■]</text>
-  <text x="42.0 48.6 55.2 61.8 68.4 75.0 81.6 88.2 94.8" y="18" font-size="11" class="dim">~/readyai</text>
+  <text x="42.0 48.6 55.2 61.8 68.4 75.0 81.6 88.2 94.8" y="18" font-size="11" class="dim code">~/readyai</text>
   <rect x="328" y="6" width="54" height="16" rx="3" fill="none" stroke="#00c832"/>
   <text x="337.0 343.0 349.0 355.0 361.0 367.0" y="18" font-size="10" class="b" style="fill:#00c832">PUBLIC</text>
   
-  <text x="20.0 33.2 46.4 59.6 72.8 86.0 99.2" y="62" font-size="22" class="hi b glow">readyai</text>
-  <text x="20.0 27.5 35.0 42.5 50.0 57.5 65.0 72.5 80.0 87.5 95.0 102.5 110.0 117.5 125.0 132.5 140.0 147.5 155.0 162.5 170.0 177.5 185.0 192.5 200.0 207.5 215.0 222.5 230.0 237.5 245.0 252.5" y="90" font-size="12.5" class="mid">AI interview practice app with a</text>
-  <text x="20.0 27.5 35.0 42.5 50.0 57.5 65.0 72.5 80.0 87.5 95.0 102.5 110.0 117.5 125.0 132.5 140.0 147.5 155.0 162.5 170.0 177.5 185.0 192.5 200.0 207.5 215.0 222.5 230.0 237.5 245.0 252.5 260.0 267.5 275.0 282.5 290.0 297.5 305.0 312.5 320.0 327.5 335.0 342.5 350.0 357.5" y="109" font-size="12.5" class="mid">Duolingo-style learning path and live feedback</text>
-  <text x="20.0 27.5 35.0 42.5 50.0 57.5 65.0 72.5 80.0 87.5 95.0 102.5 110.0 117.5 125.0 132.5" y="128" font-size="12.5" class="mid">on every answer.</text>
+  <text x="20.0 33.2 46.4 59.6 72.8 86.0 99.2" y="62" font-size="22" class="hi b glow">READYAI</text>
+  <text x="20.0 27.5 35.0 42.5 50.0 57.5 65.0 72.5 80.0 87.5 95.0 102.5 110.0 117.5 125.0 132.5 140.0 147.5 155.0 162.5 170.0 177.5 185.0 192.5 200.0 207.5 215.0 222.5 230.0 237.5 245.0 252.5" y="90" font-size="12.5" class="mid">AI INTERVIEW PRACTICE APP WITH A</text>
+  <text x="20.0 27.5 35.0 42.5 50.0 57.5 65.0 72.5 80.0 87.5 95.0 102.5 110.0 117.5 125.0 132.5 140.0 147.5 155.0 162.5 170.0 177.5 185.0 192.5 200.0 207.5 215.0 222.5 230.0 237.5 245.0 252.5 260.0 267.5 275.0 282.5 290.0 297.5 305.0 312.5 320.0 327.5 335.0 342.5 350.0 357.5" y="109" font-size="12.5" class="mid">DUOLINGO-STYLE LEARNING PATH AND LIVE FEEDBACK</text>
+  <text x="20.0 27.5 35.0 42.5 50.0 57.5 65.0 72.5 80.0 87.5 95.0 102.5 110.0 117.5 125.0 132.5" y="128" font-size="12.5" class="mid">ON EVERY ANSWER.</text>
   <rect x="20" y="150" width="352" height="1" fill="#003b00"/>
-  <text x="20.0 26.6 33.2 39.8 46.4 53.0 59.6 66.2 72.8 79.4 86.0 92.6 99.2 105.8 112.4 119.0 125.6 132.2 138.8 145.4 152.0 158.6 165.2 171.8 178.4 185.0 191.6 198.2 204.8 211.4 218.0 224.6" y="173" font-size="11" class="dim b">React Native · Expo · TypeScript</text>
-  <text x="312.6 319.2 325.8 332.4 339.0 345.6 352.2 358.8 365.4" y="173" font-size="11" class="hi">source -&gt;</text>
+  <text x="20.0 26.6 33.2 39.8 46.4 53.0 59.6 66.2 72.8 79.4 86.0 92.6 99.2 105.8 112.4 119.0 125.6 132.2 138.8 145.4 152.0 158.6 165.2 171.8 178.4 185.0 191.6 198.2 204.8 211.4 218.0 224.6" y="173" font-size="11" class="dim b">REACT NATIVE · EXPO · TYPESCRIPT</text>
+  <text x="312.6 319.2 325.8 332.4 339.0 345.6 352.2 358.8 365.4" y="173" font-size="11" class="hi">SOURCE -&gt;</text>
 </g>
 <rect x=".5" y=".5" width="391" height="189" rx="8" fill="none" stroke="#003b00"/>
 </g>

@@ -57,7 +57,7 @@ function next(pill) {
   let last = -1
   try {
     const saved = JSON.parse(localStorage.getItem(key) || 'null')
-    if (saved && Array.isArray(saved.deck) && saved.n === links.length) ({ deck, last } = saved)
+    if (saved?.n === links.length) ({ deck, last } = saved)
   } catch {}
   if (!deck || deck.length === 0) {
     deck = shuffled(links.length)
