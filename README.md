@@ -1,111 +1,70 @@
-<img src=".github/hero.svg" alt="Terminal boot sequence: whoami, role, and mission" width="640">
+<div align="center">
 
-[![SpaceGrow Media](https://img.shields.io/badge/SpaceGrow%20Media-0a0e0a?style=for-the-badge&logo=vercel&logoColor=4ade80)](https://spacegrowmedia.com)
-[![GitHub](https://img.shields.io/badge/GitHub-0a0e0a?style=for-the-badge&logo=github&logoColor=4ade80)](https://github.com/nishitjayne)
+<img src=".github/matrix/hero.svg" width="100%" alt="Matrix code rain behind the name Nishit Jain decoding letter by letter: full-stack developer, AI builder, founder at SpaceGrow Media">
 
----
+<br>
 
-## <img src=".github/icons/about.svg" width="20" align="center" alt=""> About Me
+[![SpaceGrow Media](https://img.shields.io/badge/spacegrowmedia.com-0d0208?style=for-the-badge&logo=vercel&logoColor=00ff41&labelColor=0d0208&color=003b00)](https://spacegrowmedia.com) [![Mezvo Scan](https://img.shields.io/badge/mezvo--scan-live-0d0208?style=for-the-badge&logo=pwa&logoColor=00ff41&labelColor=0d0208&color=003b00)](https://mezvo-scan.vercel.app)
 
-- I spun **[SpaceGrow Media](https://github.com/nishitjayne/spacegrowmedia)** into the digital ether — a hyper-immersive 3D agency experience (boot it on desktop for max visual fidelity)
-- I built **[Mezvo Scan](https://mezvo-scan.vercel.app)** — an offline-first barcode inventory PWA a bag brand runs its stalls on: scan to sell with no signal, sync when it returns, and print tags straight to a Bluetooth thermal printer
-- I build **AI-powered pipelines** using Gemini, LangChain, and multi-agent systems
-- Currently experimenting with **React Native**, **computer vision**, and **agentic workflows**
-- Focus: shipping real products, not just side projects
+</div>
 
----
+<img src=".github/matrix/h-about.svg" width="100%" alt="01 whoami">
 
-## <img src=".github/icons/stack.svg" width="20" align="center" alt=""> Tech Stack
+```console
+nishit@zion:~$ whoami --long
+```
 
-**Languages**
+- Built **[SpaceGrow Media](https://spacegrowmedia.com)**, a hyper-immersive 3D agency site (boot it on desktop for the full effect)
+- Shipped **[Mezvo Scan](https://mezvo-scan.vercel.app)**, the offline-first barcode PWA a bag brand runs its stalls on: sell with no signal, sync when it returns, print tags to a Bluetooth thermal printer
+- Build **AI pipelines** with Claude, Gemini, LangChain and multi-agent systems
+- Experimenting with **React Native**, **computer vision** and **agentic workflows**
+- Rule: ship real products, not side quests
 
-![Python](https://img.shields.io/badge/Python-0a0e0a?style=flat-square&logo=python&logoColor=4ade80)
-![JavaScript](https://img.shields.io/badge/JavaScript-0a0e0a?style=flat-square&logo=javascript&logoColor=4ade80)
-![TypeScript](https://img.shields.io/badge/TypeScript-0a0e0a?style=flat-square&logo=typescript&logoColor=4ade80)
-![HTML5](https://img.shields.io/badge/HTML5-0a0e0a?style=flat-square&logo=html5&logoColor=4ade80)
-![CSS3](https://img.shields.io/badge/CSS3-0a0e0a?style=flat-square&logo=css3&logoColor=4ade80)
+<img src=".github/matrix/h-modules.svg" width="100%" alt="02 loaded modules">
 
-**Frameworks & Libraries**
+<img src=".github/matrix/modules.svg" width="100%" alt="Stack. Languages: Python, TypeScript, JavaScript, HTML5, CSS3. Frontend: React, React Native, Next.js, Vite, Tailwind, Framer Motion. AI and agents: Claude, Claude Code, Gemini, LangChain, MCP, Ollama, OpenCV, scikit-learn, pandas. Backend: Node.js, Flask, Deno, JWT, Supabase, PostgreSQL, MongoDB. Shipping: Vercel, GitHub Actions, PWA, Playwright, Git.">
 
-![React](https://img.shields.io/badge/React-0a0e0a?style=flat-square&logo=react&logoColor=4ade80)
-![React Native](https://img.shields.io/badge/React_Native-0a0e0a?style=flat-square&logo=react&logoColor=4ade80)
-![Next.js](https://img.shields.io/badge/Next.js-0a0e0a?style=flat-square&logo=nextdotjs&logoColor=4ade80)
-![Vite](https://img.shields.io/badge/Vite-0a0e0a?style=flat-square&logo=vite&logoColor=4ade80)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-0a0e0a?style=flat-square&logo=tailwindcss&logoColor=4ade80)
-![Flask](https://img.shields.io/badge/Flask-0a0e0a?style=flat-square&logo=flask&logoColor=4ade80)
-![Node.js](https://img.shields.io/badge/Node.js-0a0e0a?style=flat-square&logo=nodedotjs&logoColor=4ade80)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0a0e0a?style=flat-square&logo=framer&logoColor=4ade80)
+<img src=".github/matrix/h-projects.svg" width="100%" alt="03 programs running">
 
-**AI & Agents**
+<p align="center">
+  <a href="https://mezvo-scan.vercel.app"><img src=".github/matrix/cards/mezvo-scan.svg" width="49%" alt="mezvo-scan: offline-first barcode inventory PWA. React, TypeScript, PWA, Supabase. Live."></a>
+  <a href="https://spacegrowmedia.com"><img src=".github/matrix/cards/spacegrowmedia.svg" width="49%" alt="spacegrowmedia: hyper-immersive 3D agency site. Live."></a>
+  <a href="https://github.com/nishitjayne/ai-lead-qualifier"><img src=".github/matrix/cards/ai-lead-qualifier.svg" width="49%" alt="ai-lead-qualifier: multi-agent Gemini lead pipeline in Python."></a>
+  <a href="https://github.com/nishitjayne/readyai"><img src=".github/matrix/cards/readyai.svg" width="49%" alt="readyai: AI interview practice app in React Native and Expo."></a>
+  <a href="https://github.com/nishitjayne/knowledge-bounty"><img src=".github/matrix/cards/knowledge-bounty.svg" width="49%" alt="knowledge-bounty: real-time gamified task marketplace on the MERN stack."></a>
+  <a href="https://github.com/nishitjayne/velmessa"><img src=".github/matrix/cards/velmessa.svg" width="49%" alt="velmessa: animated SaaS landing page with React and Framer Motion."></a>
+</p>
 
-![Claude](https://img.shields.io/badge/Claude-0a0e0a?style=flat-square&logo=claude&logoColor=4ade80)
-![Claude Code](https://img.shields.io/badge/Claude_Code-0a0e0a?style=flat-square&logo=claude&logoColor=4ade80)
-![Google Gemini](https://img.shields.io/badge/Gemini-0a0e0a?style=flat-square&logo=googlegemini&logoColor=4ade80)
-![LangChain](https://img.shields.io/badge/LangChain-0a0e0a?style=flat-square&logo=langchain&logoColor=4ade80)
-![MCP](https://img.shields.io/badge/Model_Context_Protocol-0a0e0a?style=flat-square&logo=anthropic&logoColor=4ade80)
-![Ollama](https://img.shields.io/badge/Ollama-0a0e0a?style=flat-square&logo=ollama&logoColor=4ade80)
-![OpenCV](https://img.shields.io/badge/OpenCV-0a0e0a?style=flat-square&logo=opencv&logoColor=4ade80)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0a0e0a?style=flat-square&logo=scikit-learn&logoColor=4ade80)
-![pandas](https://img.shields.io/badge/pandas-0a0e0a?style=flat-square&logo=pandas&logoColor=4ade80)
+<br>
 
-**Data & Infrastructure**
+<details>
+<summary><b>&gt; ls ~/archive</b> &nbsp;·&nbsp; the rest of the repos</summary>
+<br>
 
-![Supabase](https://img.shields.io/badge/Supabase-0a0e0a?style=flat-square&logo=supabase&logoColor=4ade80)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0a0e0a?style=flat-square&logo=postgresql&logoColor=4ade80)
-![Deno](https://img.shields.io/badge/Deno-0a0e0a?style=flat-square&logo=deno&logoColor=4ade80)
-![MongoDB](https://img.shields.io/badge/MongoDB-0a0e0a?style=flat-square&logo=mongodb&logoColor=4ade80)
-![Vercel](https://img.shields.io/badge/Vercel-0a0e0a?style=flat-square&logo=vercel&logoColor=4ade80)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0a0e0a?style=flat-square&logo=githubactions&logoColor=4ade80)
-![JWT](https://img.shields.io/badge/JWT-0a0e0a?style=flat-square&logo=jsonwebtokens&logoColor=4ade80)
+| Repo | What it is | Built with |
+|---|---|---|
+| [attendance-system](https://github.com/nishitjayne/attendance-system) | Contactless attendance by real-time face recognition, logged to Excel | Python · OpenCV · pandas · Flask |
+| [lendenclub-identitymicro-service](https://github.com/nishitjayne/lendenclub-identitymicro-service) | User profile and access control service | Node.js · JWT · AES-256 |
+| [miniproject](https://github.com/nishitjayne/miniproject) | Small web builds: face attendance, food shop, AI learning page | HTML · JS |
+| canadian-realty | Real-estate site for a client (private, happy to demo on a call) | JavaScript |
+| [nishitjayne](https://github.com/nishitjayne/nishitjayne) | This page: generated SVGs and a six-hourly Actions job | Node · Actions |
 
-**Shipping**
+</details>
 
-![PWA](https://img.shields.io/badge/PWA-0a0e0a?style=flat-square&logo=pwa&logoColor=4ade80)
-![Playwright](https://img.shields.io/badge/Playwright-0a0e0a?style=flat-square)
-![Git](https://img.shields.io/badge/Git-0a0e0a?style=flat-square&logo=git&logoColor=4ade80)
+<br>
 
----
+<img src=".github/matrix/h-bootlog.svg" width="100%" alt="04 system log">
 
-## <img src=".github/icons/repos.svg" width="20" align="center" alt=""> Every Repository
+<img src="https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/bootseq.svg" width="100%" alt="A BIOS-style boot log of real commit activity across public and private repos, refreshed every six hours">
 
-**Products & clients**
+<img src=".github/matrix/h-status.svg" width="100%" alt="05 current state">
 
-<img src=".github/blocks/repo-products.svg" alt="ls -la ~/products">
+<img src=".github/matrix/status.svg" width="100%" alt="Working on AI agents. Learning local models with Ollama, LangGraph, vector databases and on-device ML. 2026 goal: three products with a sharper point of view on everyday tasks. Ask me about space, astrophysics, conspiracy theories and philosophy.">
 
-→ [spacegrowmedia](https://github.com/nishitjayne/spacegrowmedia) · [velmessa](https://github.com/nishitjayne/velmessa) · mezvo-scan (private, [live](https://mezvo-scan.vercel.app)) · canadian-realty (private)
+<div align="center">
 
-**AI & agents**
+<img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Follow the white rabbit. Red pill or blue pill.">
 
-<img src=".github/blocks/repo-ai-agents.svg" alt="ls -la ~/ai-agents">
+**[🔴 Red pill: see how deep SpaceGrow goes](https://spacegrowmedia.com)** &nbsp;&nbsp;·&nbsp;&nbsp; **[🔵 Blue pill: open Mezvo Scan](https://mezvo-scan.vercel.app)**
 
-→ [ai-lead-qualifier](https://github.com/nishitjayne/ai-lead-qualifier) · [readyai](https://github.com/nishitjayne/readyai)
-
-**Systems & backend**
-
-<img src=".github/blocks/repo-systems.svg" alt="ls -la ~/systems">
-
-→ [knowledge-bounty](https://github.com/nishitjayne/knowledge-bounty) · [lendenclub-identitymicro-service](https://github.com/nishitjayne/lendenclub-identitymicro-service)
-
-**Computer vision & experiments**
-
-<img src=".github/blocks/repo-experiments.svg" alt="ls -la ~/experiments">
-
-→ [attendance-system](https://github.com/nishitjayne/attendance-system) · [miniproject](https://github.com/nishitjayne/miniproject) · [nishitjayne](https://github.com/nishitjayne/nishitjayne)
-
-<sub>`-rwx------` marks a private repo. Happy to walk through either one on a call.</sub>
-
----
-
-## <img src=".github/icons/grid.svg" width="20" align="center" alt=""> Boot Log
-
-<img alt="A BIOS-style boot log of real commit activity across public and private repos, refreshed every six hours" src="https://raw.githubusercontent.com/nishitjayne/nishitjayne/output/bootseq.svg">
-
----
-
-## <img src=".github/icons/flame.svg" width="20" align="center" alt=""> Currently Cooking
-
-<img src=".github/blocks/cooking.svg" alt="Currently working on, learning, and asking about">
-
----
-
-<img src=".github/blocks/closing.svg" alt="echo Build fast. Ship real. Iterate always.">
+</div>

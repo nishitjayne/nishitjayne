@@ -187,7 +187,7 @@ const FONT = 14
 const LINE_H = 20
 const PAD_X = 24
 const PAD_TOP = 28
-const WIDTH = 640
+const WIDTH = 840
 const HEIGHT = PAD_TOP + lines.length * LINE_H + 24
 const STEP_MS = 320
 
@@ -236,20 +236,20 @@ lines.forEach((line, i) => {
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
   <style>
-    svg { background: #0a0e0a; }
+    svg { background: transparent; }
     text {
       font-family: 'Consolas', 'SFMono-Regular', Menlo, monospace;
       font-size: ${FONT}px;
-      fill: #4ade80;
+      fill: #00ff41;
       white-space: pre;
     }
-    .hdr { fill: #86efac; font-weight: bold; }
-    .rule { fill: #166534; }
-    .cursor { fill: #4ade80; }
-    text, rect.cursor { filter: drop-shadow(0 0 2px rgba(74,222,128,0.55)); }
+    .hdr { fill: #d8ffe2; font-weight: bold; }
+    .rule { fill: #008f11; }
+    .cursor { fill: #00ff41; }
+    text, rect.cursor { filter: drop-shadow(0 0 2px rgba(0,255,65,0.6)); }
     ${keyframeRules}
   </style>
-  <rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#0a0e0a"/>
+  <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${HEIGHT - 1}" rx="10" fill="#0d0208" stroke="#003b00"/>
   <g id="scanlines" opacity="0.05">
     ${Array.from({ length: Math.ceil(HEIGHT / 3) }, (_, i) => `<rect x="0" y="${i * 3}" width="${WIDTH}" height="1" fill="#000"/>`).join('')}
   </g>
