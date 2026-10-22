@@ -28,6 +28,9 @@ jobs:
           BOOT_TOKEN: ${{ secrets.BOOT_TOKEN }}
         run: node .github/scripts/bootseq.mjs
 
+      - name: Draw the profile window around it
+        run: node .github/scripts/matrix.mjs
+
       - name: Push to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -1,4 +1,4 @@
-// Renders "NISHIT BIOS" — an animated SVG boot log built from real GitHub
+// Gathers "NISHIT BIOS" — the boot log lines built from real GitHub
 // activity (all repos the token can see, private included). Runs headless
 // under Node in Actions; no npm dependencies.
 //
@@ -6,11 +6,11 @@
 //   GH_LOGIN       github login the stats belong to
 //   BOOT_TOKEN     classic PAT, scope: repo (read)
 // Optional:
-//   OUT            output path (default dist/bootseq.svg)
+//   OUT            output path (default dist/boot.json)
 
 const login = process.env.GH_LOGIN
 const token = process.env.BOOT_TOKEN
-const out = process.env.OUT || 'dist/bootseq.svg'
+const out = process.env.OUT || 'dist/boot.json'
 
 if (!login) throw new Error('GH_LOGIN is not set')
 if (!token) throw new Error('BOOT_TOKEN is not set')
@@ -181,83 +181,10 @@ const lines = [
   { text: `Starting ${login} ...`, cursor: true },
 ]
 
-// --- 5. Render as an animated SVG -----------------------------------------
-
-const FONT = 14
-const LINE_H = 20
-const PAD_X = 24
-const PAD_TOP = 28
-const WIDTH = 840
-const HEIGHT = PAD_TOP + lines.length * LINE_H + 24
-const STEP_MS = 320
-
-function esc(s) {
-  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-}
-
-const holdMs = 6000
-const totalDuration = lines.length * STEP_MS + holdMs
-const loopSec = (totalDuration / 1000).toFixed(2)
-
-let svgLines = ''
-let keyframeRules = ''
-
-lines.forEach((line, i) => {
-  const delayPct = ((i * STEP_MS) / totalDuration) * 100
-  const y = PAD_TOP + i * LINE_H
-  const cls = line.cls === 'hdr' ? 'hdr' : line.cls === 'rule' ? 'rule' : 'ln'
-  const animName = `reveal${i}`
-  keyframeRules += `
-    @keyframes ${animName} {
-      0% { opacity: 0; }
-      ${delayPct.toFixed(2)}% { opacity: 0; }
-      ${Math.min(100, delayPct + 0.3).toFixed(2)}% { opacity: 1; }
-      100% { opacity: 1; }
-    }
-    .l${i} { animation: ${animName} ${loopSec}s steps(1) infinite; }`
-
-  svgLines += `
-    <text x="${PAD_X}" y="${y}" class="${cls} l${i}">${esc(line.text)}</text>`
-
-  if (line.cursor) {
-    const cursorX = PAD_X + line.text.length * 8.4 + 4
-    keyframeRules += `
-    @keyframes blink${i} {
-      0%, ${delayPct.toFixed(2)}% { opacity: 0; }
-      ${Math.min(100, delayPct + 0.3).toFixed(2)}%, ${Math.min(100, delayPct + 8).toFixed(2)}% { opacity: 1; }
-      ${Math.min(100, delayPct + 12).toFixed(2)}%, ${Math.min(100, delayPct + 16).toFixed(2)}% { opacity: 0; }
-      ${Math.min(100, delayPct + 20).toFixed(2)}%, 100% { opacity: 1; }
-    }
-    .cur${i} { animation: blink${i} ${loopSec}s steps(1) infinite; }`
-    svgLines += `
-    <rect x="${cursorX}" y="${y - 11}" width="8" height="14" class="cursor cur${i}"/>`
-  }
-})
-
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
-  <style>
-    svg { background: transparent; }
-    text {
-      font-family: 'Consolas', 'SFMono-Regular', Menlo, monospace;
-      font-size: ${FONT}px;
-      fill: #00ff41;
-      white-space: pre;
-    }
-    .hdr { fill: #d8ffe2; font-weight: bold; }
-    .rule { fill: #008f11; }
-    .cursor { fill: #00ff41; }
-    text, rect.cursor { filter: drop-shadow(0 0 2px rgba(0,255,65,0.6)); }
-    ${keyframeRules}
-  </style>
-  <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${HEIGHT - 1}" rx="10" fill="#0d0208" stroke="#003b00"/>
-  <g id="scanlines" opacity="0.05">
-    ${Array.from({ length: Math.ceil(HEIGHT / 3) }, (_, i) => `<rect x="0" y="${i * 3}" width="${WIDTH}" height="1" fill="#000"/>`).join('')}
-  </g>
-  ${svgLines}
-</svg>`
+// --- 5. Hand the lines to matrix.mjs, which draws them inside the page ----
 
 const fs = await import('node:fs')
 const path = await import('node:path')
 fs.mkdirSync(path.dirname(out), { recursive: true })
-fs.writeFileSync(out, svg)
+fs.writeFileSync(out, JSON.stringify(lines, null, 1))
 console.log('wrote ' + out + '  (' + repos.length + ' repos, ' + totalCommits + ' commits, ' + sampled + ' timestamps sampled)')
