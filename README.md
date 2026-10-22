@@ -11,7 +11,7 @@ nishit@zion:~$ whoami --long
 ```
 
 - AI engineer who works the whole stack: models and agents at one end, the screen someone taps at the other
-- I build for real constraints: a stall with no signal, a back office that runs on SAP, a site that has to feel alive in 3D
+- I build for real constraints: a stall with no signal, a back office that runs on SAP, a camera that has to recognise a face in real time
 - Happiest when a problem doesn't fit one box. An LLM pipeline this week, a barcode PWA the next
 - Off the keyboard: space, astrophysics, philosophy, and the odd conspiracy theory
 - Rule: ship it, watch it get used, fix what breaks
@@ -24,9 +24,9 @@ nishit@zion:~$ whoami --long
 
 <p align="center">
   <a href="https://mezvo-scan.vercel.app"><img src=".github/matrix/cards/mezvo-scan.svg" width="49%" alt="mezvo-scan: offline-first barcode inventory PWA. React, TypeScript, PWA, Supabase. Live."></a>
-  <a href="https://spacegrowmedia.com"><img src=".github/matrix/cards/spacegrowmedia.svg" width="49%" alt="spacegrowmedia: hyper-immersive 3D agency site. Live."></a>
   <a href="https://github.com/nishitjayne/ai-lead-qualifier"><img src=".github/matrix/cards/ai-lead-qualifier.svg" width="49%" alt="ai-lead-qualifier: multi-agent Gemini lead pipeline in Python."></a>
   <a href="https://github.com/nishitjayne/readyai"><img src=".github/matrix/cards/readyai.svg" width="49%" alt="readyai: AI interview practice app in React Native and Expo."></a>
+  <a href="https://github.com/nishitjayne/attendance-system"><img src=".github/matrix/cards/attendance-system.svg" width="49%" alt="attendance-system: contactless attendance by real-time face recognition. Python, OpenCV, scikit-learn, Flask."></a>
   <a href="https://github.com/nishitjayne/knowledge-bounty"><img src=".github/matrix/cards/knowledge-bounty.svg" width="49%" alt="knowledge-bounty: real-time gamified task marketplace on the MERN stack."></a>
   <a href="https://github.com/nishitjayne/velmessa"><img src=".github/matrix/cards/velmessa.svg" width="49%" alt="velmessa: animated SaaS landing page with React and Framer Motion."></a>
 </p>
@@ -39,7 +39,6 @@ nishit@zion:~$ whoami --long
 
 | Repo | What it is | Built with |
 |---|---|---|
-| [attendance-system](https://github.com/nishitjayne/attendance-system) | Contactless attendance by real-time face recognition, logged to Excel | Python · OpenCV · pandas · Flask |
 | [lendenclub-identitymicro-service](https://github.com/nishitjayne/lendenclub-identitymicro-service) | User profile and access control service | Node.js · JWT · AES-256 |
 | [miniproject](https://github.com/nishitjayne/miniproject) | Small web builds: face attendance, food shop, AI learning page | HTML · JS |
 | canadian-realty | Real-estate site for a client (private, happy to demo on a call) | JavaScript |
@@ -55,12 +54,12 @@ nishit@zion:~$ whoami --long
 
 <img src=".github/matrix/h-status.svg" width="100%" alt="05 current state">
 
-<img src=".github/matrix/status.svg" width="100%" alt="Working on AI agents. Learning local models with Ollama, LangGraph, vector databases and on-device ML. 2026 goal: three products with a sharper point of view on everyday tasks. Ask me about space, astrophysics, conspiracy theories and philosophy.">
+<img src=".github/matrix/status.svg" width="100%" alt="Working on AI agents. Pondering whether we live in a simulation. Learning local models with Ollama, LangGraph, vector databases and on-device ML. 2026 goal: three products with a sharper point of view on everyday tasks. Ask me about space, astrophysics, conspiracy theories and philosophy.">
 
 <div align="center">
 
 <img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Follow the white rabbit.">
 
-<a href="https://github.com/nishitjayne?tab=repositories"><img src=".github/matrix/pill-red.svg" width="300" alt="Red pill: go deeper, every repository"></a> &nbsp;&nbsp; <a href="https://spacegrowmedia.com"><img src=".github/matrix/pill-blue.svg" width="300" alt="Blue pill: stay on the surface, live work"></a>
+<a href="https://github.com/nishitjayne?tab=repositories"><img src=".github/matrix/pill-red.svg" width="300" alt="Red pill: go deeper, every repository"></a> &nbsp;&nbsp; <a href="https://apod.nasa.gov/apod/astropix.html"><img src=".github/matrix/pill-blue.svg" width="300" alt="Blue pill: look up instead, NASA's astronomy picture of the day"></a>
 
 </div>

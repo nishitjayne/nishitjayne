@@ -170,7 +170,7 @@ function hero() {
   const SS = 13
   const subX = W / 2 - textW(sub, SS) / 2
 
-  const chips = ['STATUS: BUILDING', 'NODE: INDIA', 'UPLINK: OPEN']
+  const chips = ['STATUS: BUILDING', 'NODE: INDIA', 'MODE: TINKER WITH EVERYTHING']
   const CS = 11
   const gap = 14
   const chipW = chips.map((c) => textW(c, CS) + 20)
@@ -336,9 +336,9 @@ const CARDS = [
     stack: 'React · TypeScript · PWA · Supabase',
   },
   {
-    name: 'spacegrowmedia', status: 'LIVE', meta: 'visit ->',
-    desc: 'A hyper-immersive 3D agency site for SpaceGrow Media. Boot it on desktop for full visual fidelity.',
-    stack: 'HTML · CSS · Vite · 3D',
+    name: 'attendance-system', status: 'PUBLIC', meta: 'source ->',
+    desc: 'Contactless attendance by real-time face recognition. The camera marks you present and the sheet fills itself.',
+    stack: 'Python · OpenCV · scikit-learn · Flask',
   },
   {
     name: 'ai-lead-qualifier', status: 'PUBLIC', meta: 'source ->',
@@ -370,6 +370,7 @@ function status() {
     ['LEARNING', 'Local models with Ollama · LangGraph · vector DBs · on-device ML'],
     ['BREAKING', 'My own products, before users can'],
     ['2026 GOAL', '3 products that bring a sharper point of view to everyday tasks'],
+    ['PONDERING', 'Are we living in a simulation? (this page may be biased)'],
     ['ASK ME', 'Space · Astrophysics · Conspiracy theories · Philosophy'],
   ]
   const S = 13
@@ -443,5 +444,5 @@ out('.github/matrix/modules.svg', modules())
 out('.github/matrix/status.svg', status())
 out('.github/matrix/footer.svg', footer())
 out('.github/matrix/pill-red.svg', pillButton(C.red, 'RED PILL', 'go deeper: every repository'))
-out('.github/matrix/pill-blue.svg', pillButton(C.blue, 'BLUE PILL', 'stay on the surface: live work'))
+out('.github/matrix/pill-blue.svg', pillButton(C.blue, 'BLUE PILL', "look up instead: today's sky"))
 for (const c of CARDS) out(`.github/matrix/cards/${c.name}.svg`, card(c))
