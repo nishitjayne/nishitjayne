@@ -380,6 +380,11 @@ function main() {
 
 const CARDS = [
   {
+    name: 'dispatch-challan-system', status: 'PRIVATE', meta: 'private',
+    desc: 'Warehouse dispatch and challan system wired into SAP. Passkey logins, PostgreSQL, rate limiting and 49 test files.',
+    stack: 'TypeScript · PostgreSQL · SAP',
+  },
+  {
     name: 'mezvo-scan', status: 'LIVE', meta: 'open app ->',
     desc: 'Offline-first barcode PWA a bag brand runs its stalls on. Sells with no signal, syncs when back, prints tags over Bluetooth.',
     stack: 'React · TypeScript · PWA · Supabase',
@@ -390,24 +395,9 @@ const CARDS = [
     stack: 'Python · Gemini · Agents · SMTP',
   },
   {
-    name: 'readyai', status: 'PUBLIC', meta: 'source ->',
-    desc: 'AI interview practice app with a Duolingo-style learning path and live feedback on every answer.',
-    stack: 'React Native · Expo · TypeScript',
-  },
-  {
-    name: 'attendance-system', status: 'PUBLIC', meta: 'source ->',
-    desc: 'Contactless attendance by real-time face recognition. The camera marks you present and the sheet fills itself.',
-    stack: 'Python · OpenCV · scikit-learn · Flask',
-  },
-  {
     name: 'knowledge-bounty', status: 'PUBLIC', meta: 'source ->',
     desc: 'Real-time gamified task marketplace with race-condition-proof MongoDB claims and an XP leaderboard.',
     stack: 'MongoDB · Express · React · Node',
-  },
-  {
-    name: 'velmessa', status: 'PUBLIC', meta: 'source ->',
-    desc: 'Animated SaaS landing page with a nine-blob organic motion system and glassmorphism.',
-    stack: 'React · Framer Motion',
   },
 ]
 
@@ -422,6 +412,7 @@ function card({ name, status, desc, stack, meta }, side) {
   // A card holds three lines; a longer description must be edited, never cut.
   if (lines.length > 3) throw new Error(`${name}: description needs ${lines.length} lines, cards hold 3`)
   if (textW(name, 22) > CW - pad * 2) throw new Error(`${name}: title wider than the card`)
+  if (textW(stack, 11) + 24 + textW(meta, 11) > CW - pad * 2) throw new Error(`${name}: stack runs into "${meta}"`)
   const r = rain({ w: CW, h: CH, x0: CW - 110, cols: 6, size: 12, opacity: 0.16, minDur: 6, maxDur: 12 })
   const sc = status === 'LIVE' ? C.hi : C.mid
   const sw = textW(status, 10) + 18
