@@ -60,6 +60,6 @@ nishit@zion:~$ whoami --long
 
 <img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Choose.">
 
-<a href="https://www.livescience.com/space/black-holes/is-our-universe-trapped-inside-a-black-hole-this-james-webb-space-telescope-discovery-might-blow-your-mind"><img src=".github/matrix/pill-red.svg" width="220" alt="Red pill"></a> &nbsp;&nbsp; <a href="https://hasthelargehadroncolliderdestroyedtheworldyet.com/"><img src=".github/matrix/pill-blue.svg" width="220" alt="Blue pill"></a>
+<a href="https://nishitjayne.github.io/nishitjayne/red.html"><img src=".github/matrix/pill-red.svg" width="220" alt="Red pill"></a> &nbsp;&nbsp; <a href="https://nishitjayne.github.io/nishitjayne/blue.html"><img src=".github/matrix/pill-blue.svg" width="220" alt="Blue pill"></a>
 
 </div>
