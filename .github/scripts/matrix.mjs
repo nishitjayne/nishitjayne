@@ -166,11 +166,11 @@ function hero() {
   const d = decode({ x: nameX, y: PY + 108, word: name, size: NS, cycle: CYCLE, start: 1.6, key: 'n' })
 
   const wake = 'Wake up, visitor...'
-  const sub = 'full-stack developer  //  ai builder  //  founder @ spacegrow media'
+  const sub = 'ai engineer  //  full-stack  //  builds whatever the problem needs'
   const SS = 13
   const subX = W / 2 - textW(sub, SS) / 2
 
-  const chips = ['STATUS: SHIPPING', 'NODE: INDIA', 'UPLINK: OPEN']
+  const chips = ['STATUS: BUILDING', 'NODE: INDIA', 'UPLINK: OPEN']
   const CS = 11
   const gap = 14
   const chipW = chips.map((c) => textW(c, CS) + 20)
@@ -231,11 +231,12 @@ ${mono(W - 96, 29, '[ OK ]', 12, 'mid')}
 // ------------------------------------------------------------ modules -----
 
 const MODULES = [
-  ['LANG', ['Python', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3']],
-  ['FRONTEND', ['React', 'React Native', 'Next.js', 'Vite', 'Tailwind', 'Framer Motion']],
-  ['AI / AGENTS', ['Claude', 'Claude Code', 'Gemini', 'LangChain', 'MCP', 'Ollama', 'OpenCV', 'scikit-learn', 'pandas']],
-  ['BACKEND', ['Node.js', 'Flask', 'Deno', 'JWT', 'Supabase', 'PostgreSQL', 'MongoDB']],
-  ['SHIP', ['Vercel', 'GitHub Actions', 'PWA', 'Playwright', 'Git']],
+  ['LANG', ['Python', 'TypeScript', 'JavaScript', 'SQL', 'HTML / CSS']],
+  ['AI / AGENTS', ['Claude', 'Claude Code', 'MCP', 'Gemini', 'LangChain', 'Ollama', 'Multi-agent pipelines', 'OpenCV', 'scikit-learn', 'pandas', 'NumPy']],
+  ['FRONTEND', ['React', 'React Native', 'Expo', 'Next.js', 'Vite', 'Tailwind', 'shadcn/ui', 'Framer Motion', 'Three.js', 'TanStack Query', 'Zustand']],
+  ['BACKEND', ['Node.js', 'Express', 'Flask', 'Deno', 'Zod', 'JWT', 'WebAuthn', 'SAP RFC']],
+  ['DATA', ['PostgreSQL', 'MongoDB', 'Supabase', 'IndexedDB / Dexie']],
+  ['SHIP', ['Azure', 'Vercel', 'GitHub Actions', 'PWA', 'Playwright', 'Vitest', 'Git']],
 ]
 
 function modules() {
@@ -389,17 +390,25 @@ function status() {
 
 // ------------------------------------------------------------- footer -----
 
+function pillButton(color, label, hint) {
+  const PW = 300, PH = 64
+  const body = `
+<rect x="1" y="1" width="${PW - 2}" height="${PH - 2}" rx="32" fill="${C.bg}" stroke="${color}" stroke-width="1.5"/>
+<rect x="22" y="22" width="38" height="20" rx="10" fill="${color}" style="filter: drop-shadow(0 0 6px ${color})">
+  <animate attributeName="opacity" dur="2.4s" repeatCount="indefinite" values="1;.55;1"/></rect>
+${mono(78, 30, label, 14, 'b', ` style="fill:${color}"`)}
+${mono(78, 48, hint, 11, 'dim')}`
+  if (textW(hint, 11) > PW - 78 - 20) throw new Error(`pill hint too long: ${hint}`)
+  return frame(PW, PH, body).replace(`<rect width="${PW}" height="${PH}" rx="10" fill="${C.bg}"/>`, '')
+}
+
 function footer() {
-  const H = 210
+  const H = 150
   const CYCLE = 12
   const r = rain({ w: W, h: H, cols: 56, size: 14, opacity: 0.8, minDur: 6, maxDur: 13 })
   const l1 = 'The Matrix has you.'
   const l2 = 'Follow the white rabbit.'
   const S1 = 22, S2 = 14
-  const pill = (x, color, label) => `
-    <rect x="${x}" y="142" width="180" height="34" rx="17" fill="${C.bg}" stroke="${color}" stroke-width="1.5"/>
-    <rect x="${x + 14}" y="152" width="26" height="14" rx="7" fill="${color}" style="filter: drop-shadow(0 0 5px ${color})"/>
-    ${mono(x + 52, 164, label, 12, 'b', ` style="fill:${color}"`)}`
   const body = `
 <defs>
   <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
@@ -414,8 +423,6 @@ function footer() {
   <rect width="${W}" height="${H}" fill="url(#fade)"/>
   ${typed({ x: W / 2 - textW(l1, S1) / 2, y: 70, s: l1, size: S1, cls: 'hi b glow', begin: 0.4, cps: 14, cycle: CYCLE })}
   ${typed({ x: W / 2 - textW(l2, S2) / 2, y: 104, s: l2, size: S2, cls: 'mid', begin: 2.4, cps: 16, cycle: CYCLE, cursor: true })}
-  ${pill(W / 2 - 196, C.red, 'RED PILL')}
-  ${pill(W / 2 + 16, C.blue, 'BLUE PILL')}
   ${scanlines(W, H, 0.2)}
 </g>
 <rect width="${W}" height="${H}" rx="10" fill="none" stroke="${C.deep}"/>`
@@ -435,4 +442,6 @@ out('.github/matrix/h-status.svg', header('05', 'CURRENT STATE'))
 out('.github/matrix/modules.svg', modules())
 out('.github/matrix/status.svg', status())
 out('.github/matrix/footer.svg', footer())
+out('.github/matrix/pill-red.svg', pillButton(C.red, 'RED PILL', 'go deeper: every repository'))
+out('.github/matrix/pill-blue.svg', pillButton(C.blue, 'BLUE PILL', 'stay on the surface: live work'))
 for (const c of CARDS) out(`.github/matrix/cards/${c.name}.svg`, card(c))

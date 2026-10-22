@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src=".github/matrix/hero.svg" width="100%" alt="Matrix code rain behind the name Nishit Jain decoding letter by letter: full-stack developer, AI builder, founder at SpaceGrow Media">
-
-<br>
-
-[![SpaceGrow Media](https://img.shields.io/badge/spacegrowmedia.com-0d0208?style=for-the-badge&logo=vercel&logoColor=00ff41&labelColor=0d0208&color=003b00)](https://spacegrowmedia.com) [![Mezvo Scan](https://img.shields.io/badge/mezvo--scan-live-0d0208?style=for-the-badge&logo=pwa&logoColor=00ff41&labelColor=0d0208&color=003b00)](https://mezvo-scan.vercel.app)
+<img src=".github/matrix/hero.svg" width="100%" alt="Matrix code rain behind the name Nishit Jain decoding letter by letter: AI engineer, full-stack, builds whatever the problem needs">
 
 </div>
 
@@ -14,15 +10,15 @@
 nishit@zion:~$ whoami --long
 ```
 
-- Built **[SpaceGrow Media](https://spacegrowmedia.com)**, a hyper-immersive 3D agency site (boot it on desktop for the full effect)
-- Shipped **[Mezvo Scan](https://mezvo-scan.vercel.app)**, the offline-first barcode PWA a bag brand runs its stalls on: sell with no signal, sync when it returns, print tags to a Bluetooth thermal printer
-- Build **AI pipelines** with Claude, Gemini, LangChain and multi-agent systems
-- Experimenting with **React Native**, **computer vision** and **agentic workflows**
-- Rule: ship real products, not side quests
+- AI engineer who works the whole stack: models and agents at one end, the screen someone taps at the other
+- I build for real constraints: a stall with no signal, a back office that runs on SAP, a site that has to feel alive in 3D
+- Happiest when a problem doesn't fit one box. An LLM pipeline this week, a barcode PWA the next
+- Off the keyboard: space, astrophysics, philosophy, and the odd conspiracy theory
+- Rule: ship it, watch it get used, fix what breaks
 
 <img src=".github/matrix/h-modules.svg" width="100%" alt="02 loaded modules">
 
-<img src=".github/matrix/modules.svg" width="100%" alt="Stack. Languages: Python, TypeScript, JavaScript, HTML5, CSS3. Frontend: React, React Native, Next.js, Vite, Tailwind, Framer Motion. AI and agents: Claude, Claude Code, Gemini, LangChain, MCP, Ollama, OpenCV, scikit-learn, pandas. Backend: Node.js, Flask, Deno, JWT, Supabase, PostgreSQL, MongoDB. Shipping: Vercel, GitHub Actions, PWA, Playwright, Git.">
+<img src=".github/matrix/modules.svg" width="100%" alt="Stack. Languages: Python, TypeScript, JavaScript, SQL, HTML and CSS. AI and agents: Claude, Claude Code, MCP, Gemini, LangChain, Ollama, multi-agent pipelines, OpenCV, scikit-learn, pandas, NumPy. Frontend: React, React Native, Expo, Next.js, Vite, Tailwind, shadcn/ui, Framer Motion, Three.js, TanStack Query, Zustand. Backend: Node.js, Express, Flask, Deno, Zod, JWT, WebAuthn, SAP RFC. Data: PostgreSQL, MongoDB, Supabase, IndexedDB. Shipping: Azure, Vercel, GitHub Actions, PWA, Playwright, Vitest, Git.">
 
 <img src=".github/matrix/h-projects.svg" width="100%" alt="03 programs running">
 
@@ -63,8 +59,8 @@ nishit@zion:~$ whoami --long
 
 <div align="center">
 
-<img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Follow the white rabbit. Red pill or blue pill.">
+<img src=".github/matrix/footer.svg" width="100%" alt="The Matrix has you. Follow the white rabbit.">
 
-**[🔴 Red pill: see how deep SpaceGrow goes](https://spacegrowmedia.com)** &nbsp;&nbsp;·&nbsp;&nbsp; **[🔵 Blue pill: open Mezvo Scan](https://mezvo-scan.vercel.app)**
+<a href="https://github.com/nishitjayne?tab=repositories"><img src=".github/matrix/pill-red.svg" width="300" alt="Red pill: go deeper, every repository"></a> &nbsp;&nbsp; <a href="https://spacegrowmedia.com"><img src=".github/matrix/pill-blue.svg" width="300" alt="Blue pill: stay on the surface, live work"></a>
 
 </div>
