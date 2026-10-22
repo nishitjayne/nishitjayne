@@ -178,7 +178,7 @@ function hero() {
   const d = decode({ x: W / 2 - textW(name, NS) / 2, y: PY + 108, word: name, size: NS, cycle: CYCLE, start: 0.9 })
   const sub = 'ai engineer  //  full-stack  //  builds whatever the problem needs'
 
-  const chips = ['STATUS: BUILDING', 'NODE: INDIA', 'MODE: TINKER WITH EVERYTHING']
+  const chips = ['STATUS: BUILDING', 'NODE: INDIA', 'MODE: TINKER WITH EVERYTHING', 'TABS > SPACES']
   const CS = 11, GAP = 14, CY = PY + PH + 18
   const chipW = chips.map((c) => textW(c, CS) + 20)
   let cx = W / 2 - (chipW.reduce((a, b) => a + b, 0) + GAP * (chips.length - 1)) / 2
@@ -217,17 +217,19 @@ ${chipSvg}
   }
 }
 
-function heading(index, title) {
+// Each section reports its status the way a dev would.
+function heading(index, title, tag, tagCls = 'mid') {
   const t = `${index}  ${title}`
   const S = 16
   const lineX = 38 + textW(t, S) + 18
+  const tagX = W - 56 - textW(tag, 12)
   return {
     h: 56,
     body: `<rect y="0" width="${W}" height="1" fill="${C.deep}"/>
 ${mono(22, 36, '>', S, 'dim b')}
 ${mono(40, 36, t, S, 'hi b glow')}
-<rect x="${lineX}" y="30" width="${W - lineX - 110}" height="1" fill="${C.deep}"/>
-${mono(W - 96, 36, '[ OK ]', 12, 'mid')}
+<rect x="${lineX}" y="30" width="${tagX - 14 - lineX}" height="1" fill="${C.deep}"/>
+${mono(tagX, 36, tag, 12, tagCls)}
 <rect x="${W - 36}" y="25" width="10" height="14" fill="${C.hi}" class="soft">${blink(1.1)}</rect>`,
   }
 }
@@ -247,6 +249,7 @@ const WHOAMI = [
   'I build for real constraints: a stall with no signal, a back office that runs on SAP, a camera that has to recognise a face in real time.',
   "Happiest when a problem doesn't fit one box. An LLM pipeline this week, a barcode PWA the next.",
   'Off the keyboard: space, astrophysics, philosophy, and the odd conspiracy theory.',
+  'Believes the two hardest problems are cache invalidation, naming things, and off-by-one errors.',
   'Rule: ship it, watch it get used, fix what breaks.',
 ]
 
@@ -298,7 +301,7 @@ function modules() {
   }
   css += `\n  @keyframes lit { 0% { opacity: .18 } 1%, 92% { opacity: 1 } 93%, 100% { opacity: .18 } }
   .done { animation: lit ${CYCLE}s steps(1) ${(0.65 + n * 0.09).toFixed(2)}s infinite; }`
-  body += `<g class="done" opacity="0">${mono(X0, y + 4, `[ ${n} modules loaded · 0 errors · neural link stable ]`, 12, 'hi soft')}</g>`
+  body += `<g class="done" opacity="0">${mono(X0, y + 4, `[ ${n} modules loaded · 0 errors · 3 warnings we don't talk about ]`, 12, 'hi soft')}</g>`
   return { h: y + 26, body, css }
 }
 
@@ -333,6 +336,7 @@ function status() {
     ['LEARNING', 'Local models with Ollama · LangGraph · vector DBs · on-device ML'],
     ['BREAKING', 'My own products, before users can'],
     ['2026 GOAL', '3 products that bring a sharper point of view to everyday tasks'],
+    ['LAST COMMIT', '"fix"  (the 4th one today)'],
     ['PONDERING', 'Are we living in a simulation? (this page may be biased)'],
     ['ASK ME', 'Space · Astrophysics · Conspiracy theories · Philosophy'],
   ]
@@ -351,11 +355,11 @@ function status() {
 function main() {
   const parts = [
     titleBar(), hero(),
-    heading('01', 'WHOAMI'), whoami(),
-    heading('02', 'LOADED MODULES'), modules(),
-    heading('03', 'SYSTEM LOG'), bootLog(),
-    heading('04', 'CURRENT STATE'), status(),
-    heading('05', 'PROGRAMS RUNNING'),
+    heading('01', 'WHOAMI', '[ 200 OK ]'), whoami(),
+    heading('02', 'LOADED MODULES', '[ NODE_MODULES: 2.4 GB ]'), modules(),
+    heading('03', 'SYSTEM LOG', '[ tail -f ]', 'mid code'), bootLog(),
+    heading('04', 'CURRENT STATE', "[ 418 I'M A TEAPOT ]"), status(),
+    heading('05', 'PROGRAMS RUNNING', '[ WORKS ON MY MACHINE ]'),
   ]
   let y = 0
   let body = ''
@@ -380,7 +384,7 @@ function main() {
 
 const CARDS = [
   {
-    name: 'dispatch-challan-system', status: 'PRIVATE', meta: 'private',
+    name: 'dispatch-challan-system', status: 'PRIVATE', meta: '403 forbidden',
     desc: 'Warehouse dispatch and challan system wired into SAP. Passkey logins, PostgreSQL, rate limiting and 49 test files.',
     stack: 'TypeScript · PostgreSQL · SAP',
   },
@@ -390,12 +394,12 @@ const CARDS = [
     stack: 'React · TypeScript · PWA · Supabase',
   },
   {
-    name: 'ai-lead-qualifier', status: 'PUBLIC', meta: 'source ->',
+    name: 'ai-lead-qualifier', status: 'PUBLIC', meta: 'git clone ->',
     desc: 'Multi-agent Gemini pipeline: finds leads, audits their websites, writes the cold email and sends it through Gmail.',
     stack: 'Python · Gemini · Agents · SMTP',
   },
   {
-    name: 'knowledge-bounty', status: 'PUBLIC', meta: 'source ->',
+    name: 'knowledge-bounty', status: 'PUBLIC', meta: 'git clone ->',
     desc: 'Real-time gamified task marketplace with race-condition-proof MongoDB claims and an XP leaderboard.',
     stack: 'MongoDB · Express · React · Node',
   },
@@ -427,7 +431,7 @@ function card({ name, status, desc, stack, meta }, side) {
   <rect width="${CW}" height="28" fill="${C.panel}"/>
   <rect y="28" width="${CW}" height="1" fill="${C.deep}"/>
   ${mono(12, 18, '[■]', 11, 'dim b')}
-  ${mono(42, 18, `~/${name}`, 11, 'dim code')}
+  ${mono(42, 18, `~/${name} (main)`, 11, 'dim code')}
   <rect x="${CW - sw - 10}" y="6" width="${sw}" height="16" rx="3" fill="none" stroke="${sc}"/>
   ${mono(CW - sw - 1, 18, status, 10, 'b', ` style="fill:${sc}"`)}
   ${status === 'LIVE' ? `<circle cx="${CW - sw - 19}" cy="14" r="3" fill="${C.hi}" class="glow">${pulse}</circle>` : ''}
@@ -435,7 +439,7 @@ function card({ name, status, desc, stack, meta }, side) {
   ${lines.map((l, i) => mono(pad, 90 + i * 19, l, S, 'mid')).join('\n  ')}
   <rect x="${pad}" y="${CH - 40}" width="${CW - pad * 2}" height="1" fill="${C.deep}"/>
   ${mono(pad, CH - 17, stack, 11, 'dim b')}
-  ${mono(CW - pad - textW(meta, 11), CH - 17, meta, 11, 'hi')}
+  ${mono(CW - pad - textW(meta, 11), CH - 17, meta, 11, meta.startsWith('git') ? 'hi code' : 'hi')}
 </g>
 <rect x=".5" y=".5" width="${CW - 1}" height="${CH - 1}" rx="8" fill="none" stroke="${C.deep}"/>
 </g>
@@ -477,6 +481,8 @@ ${mono(x + 76, 152, label, 15, 'b', ` style="fill:${color}"`)}`
   <rect x="${W / 2 + textW(l2, 14) / 2 + 3}" y="79" width="8.4" height="14" fill="${C.hi}" class="soft">${blink()}</rect>
   ${pill(W / 2 - 220, C.red, 'RED PILL')}
   ${pill(W / 2 + 20, C.blue, 'BLUE PILL')}
+  ${mono(22, H - 16, 'PRESS ANY KEY TO CONTINUE', 10, 'dim')}
+  ${mono(W - 22 - textW('THERE IS NO SPOON · EXIT 0', 10), H - 16, 'THERE IS NO SPOON · EXIT 0', 10, 'dim')}
   ${scanlines(W, H, 0.3)}
 </g>
 <path d="${edge}" fill="none" stroke="${C.deep}"/>`

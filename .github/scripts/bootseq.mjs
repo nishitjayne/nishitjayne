@@ -177,6 +177,9 @@ const lines = [
   { text: `Peak clock .......  ${peakLabel}` },
   { text: `Sleep schedule ...  ${sleepLabel}` },
   { text: 'Boot device ......  IDEA ...............' },
+  { text: 'Stack Overflow ...  CONNECTED' },
+  { text: 'Friday deploys ...  ENABLED' },
+  { text: 'Exit code ........  0 (allegedly)' },
   { text: ' ' },
   { text: `Starting ${login} ...`, cursor: true },
 ]
