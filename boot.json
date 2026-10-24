@@ -1,0 +1,95 @@
+[
+ {
+  "text": "NISHIT BIOS v2.6  ·  (C) 2026 nishitjayne",
+  "cls": "hdr"
+ },
+ {
+  "text": "══════════════════════════════════════════════",
+  "cls": "rule"
+ },
+ {
+  "text": "CPU ......  nishitjayne @ 4.2 GHz  [ 9 cores ]"
+ },
+ {
+  "text": "MEMORY ...  95 commits .................."
+ },
+ {
+  "text": "UPTIME ...  366 days ...................."
+ },
+ {
+  "text": " "
+ },
+ {
+  "text": "Detecting repositories ..."
+ },
+ {
+  "text": "   knowledge-bounty.............. [  36  OK ]"
+ },
+ {
+  "text": "   nishitjayne................... [  27  OK ]"
+ },
+ {
+  "text": "   sheth-parivar................. [  15  OK ]"
+ },
+ {
+  "text": "   rathod-parivar................ [   7  OK ]"
+ },
+ {
+  "text": "   velmessa...................... [   3  OK ]"
+ },
+ {
+  "text": "   attendance-system............. [   3  OK ]"
+ },
+ {
+  "text": "   readyai....................... [   2  OK ]"
+ },
+ {
+  "text": "   event-organizer-portal........ [   1  OK ]"
+ },
+ {
+  "text": "   ai-lead-qualifier............. [   1  OK ]"
+ },
+ {
+  "text": " "
+ },
+ {
+  "text": "Language partition table:"
+ },
+ {
+  "text": "   TS.. ███████████████░░░░░░░░░  61%"
+ },
+ {
+  "text": "   JS.. █████░░░░░░░░░░░░░░░░░░░  19%"
+ },
+ {
+  "text": "   CSS. ██░░░░░░░░░░░░░░░░░░░░░░   9%"
+ },
+ {
+  "text": " "
+ },
+ {
+  "text": "Peak clock .......  01:00 IST"
+ },
+ {
+  "text": "Sleep schedule ...  NOT FOUND"
+ },
+ {
+  "text": "Boot device ......  IDEA ..............."
+ },
+ {
+  "text": "Stack Overflow ...  CONNECTED"
+ },
+ {
+  "text": "Friday deploys ...  ENABLED"
+ },
+ {
+  "text": "Exit code ........  0 (allegedly)"
+ },
+ {
+  "text": " "
+ },
+ {
+  "text": "Starting nishitjayne ...",
+  "cursor": true
+ }
+]
